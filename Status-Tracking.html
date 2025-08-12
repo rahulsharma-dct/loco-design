@@ -3,19 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Planning & Zoning Department Portal</title>
+    <title>Dashboard - Main Landing Page</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="planning-zoning.css" />
+    <link rel="stylesheet" href="Status-Tracking.css" />
     <link rel="stylesheet" href="sidebar.css" />
   </head>
   <body>
     <header class="header">
       <div class="header-left">
         <div class="brand-title">Lago Vista<br />Development Services</div>
-        <h1 class="page-title">Planning & Zoning Department Portal</h1>
+        <h1 class="page-title">
+          Enhanced Document Review with Version Tracking
+        </h1>
       </div>
       <div class="header-right">
         <div class="user-info">
@@ -27,7 +33,6 @@
         </div>
       </div>
     </header>
-
     <div class="sidebar">
       <nav class="sidebar-menu">
         <a href="#" class="menu-item">
@@ -43,7 +48,6 @@
               fill="white"
             />
           </svg>
-
           <span>Dashboard</span>
         </a>
         <a href="#" class="menu-item">
@@ -59,7 +63,6 @@
               fill="white"
             />
           </svg>
-
           <span>Document Extraction</span>
         </a>
         <a href="#" class="menu-item">
@@ -75,7 +78,6 @@
               fill="white"
             />
           </svg>
-
           <span>File Validation</span>
         </a>
         <a href="#" class="menu-item">
@@ -91,7 +93,6 @@
               fill="white"
             />
           </svg>
-
           <span>Document Review</span>
         </a>
         <a href="#" class="menu-item">
@@ -107,7 +108,6 @@
               fill="white"
             />
           </svg>
-
           <span>Version Control</span>
         </a>
         <a href="#" class="menu-item">
@@ -123,7 +123,6 @@
               fill="white"
             />
           </svg>
-
           <span>Issue Resolution</span>
         </a>
         <a href="#" class="menu-item">
@@ -139,7 +138,6 @@
               fill="white"
             />
           </svg>
-
           <span>Completeness Report</span>
         </a>
         <a href="#" class="menu-item">
@@ -155,7 +153,6 @@
               fill="white"
             />
           </svg>
-
           <span>Project Creation</span>
         </a>
         <a href="#" class="menu-item">
@@ -171,7 +168,6 @@
               fill="white"
             />
           </svg>
-
           <span>Department Routing</span>
         </a>
         <a href="#" class="menu-item">
@@ -187,7 +183,6 @@
               fill="white"
             />
           </svg>
-
           <span>Status Tracking</span>
         </a>
         <a href="#" class="menu-item">
@@ -203,7 +198,6 @@
               fill="white"
             />
           </svg>
-
           <span>Planning & Zoning</span>
         </a>
         <a href="#" class="menu-item">
@@ -219,7 +213,6 @@
               fill="white"
             />
           </svg>
-
           <span>Code Enforcement</span>
         </a>
         <a href="#" class="menu-item">
@@ -235,314 +228,220 @@
               fill="white"
             />
           </svg>
-
           <span>GIS Integration</span>
         </a>
       </nav>
     </div>
 
-    <!-- Main Content -->
     <main class="main-content">
-      <!-- Planning & Zone Header -->
-      <div class="content-header">
-        <h2>Planning & Zone</h2>
-        <div class="header-stats">
-          <span>Active Construction Projects: 28</span>
-          <span class="separator">|</span>
-          <span>Inspections Today: 12</span>
+      <div class="dashboard-header">
+        <div>
+          <div class="dashboard-title">Project Status Tracking</div>
+        </div>
+        <div class="dashboard-subtitle">Real time project monitoring</div>
+      </div>
+
+      <!-- Removed inline styles and added CSS classes -->
+      <div class="status-buttons">
+        <button class="status-btn status-btn-green">Document Extraction</button>
+        <button class="status-btn status-btn-blue">Format Validation</button>
+        <button class="status-btn status-btn-gray">Content Analysis</button>
+        <button class="status-btn status-btn-gray">Compliance Check</button>
+      </div>
+
+      <!-- Current Projects Overview -->
+      <div class="projects-overview">
+        <h2>Current Projects Overview</h2>
+
+        <div class="current-project">
+          <div class="project-item">
+            <div>
+              <div class="project-title">
+                PRJ-2024-156 - Residential Development
+              </div>
+              <div class="project-status">
+                Planning: Complete | Engineering: In Progress | Environmental:
+                Complete
+              </div>
+            </div>
+            <span class="phase-badge phase-2">Phase 2</span>
+          </div>
+
+          <div class="project-item">
+            <div>
+              <div class="project-title">PRJ-2024-155 - Commercial Plaza</div>
+              <div class="project-status">All departments: Under Review</div>
+            </div>
+            <span class="phase-badge phase-2">Phase 2</span>
+          </div>
+
+          <div class="project-item">
+            <div>
+              <div class="project-title">
+                PRJ-2024-154 - Subdivision Phase 2
+              </div>
+              <div class="project-status">Missing TIA document</div>
+            </div>
+            <span class="phase-badge phase-1">Phase 1</span>
+          </div>
         </div>
       </div>
 
-      <!-- Status Cards -->
-      <div class="status-cards">
-        <div class="status-card critical">
-          <div class="card-number">1</div>
-          <div class="card-content">
-            <h3>Critical Issues</h3>
-            <p>Requires immediate attention</p>
-          </div>
-        </div>
-        <div class="status-card standard">
-          <div class="card-number">2</div>
-          <div class="card-content">
-            <h3>Standard Issues</h3>
-            <p>Normal priority items</p>
-          </div>
-        </div>
-        <div class="status-card auto-resolved">
-          <div class="card-number">4</div>
-          <div class="card-content">
-            <h3>Auto-Resolved</h3>
-            <p>System Auto-fixed Issues</p>
-          </div>
-        </div>
-        <div class="status-card pending">
-          <div class="card-number">1</div>
-          <div class="card-content">
-            <h3>Pending Response</h3>
-            <p>Waiting for Applicant</p>
-          </div>
-        </div>
-      </div>
+      <!-- Main Content Grid -->
+      <div class="main-grid">
+        <!-- Detailed Progress -->
+        <div class="progress-section">
+          <h2 class="section-title">Detailed Progress - PRJ-2024-156</h2>
 
-      <!-- Dashboard Content -->
-      <div class="dashboard-content">
-        <!-- Permit Application Types -->
-        <div class="card permit-types">
-          <h3>Permit Application Types</h3>
-          <div class="permit-list">
-            <div class="permit-item">
-              <div class="permit-icon blue">
-                <svg
-                  width="16"
-                  height="14"
-                  viewBox="0 0 15 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M13.66 10.6667H14.9925V12H0.334961V10.6667H1.66746V0.666666C1.66746 0.48 1.73187 0.322222 1.86067 0.193333C1.98948 0.0644445 2.14716 0 2.33371 0H8.99621C9.18276 0 9.34044 0.0644445 9.46925 0.193333C9.59806 0.322222 9.66246 0.48 9.66246 0.666666V10.6667H12.3275V5.33333H10.995V4H12.9937C13.1803 4 13.3379 4.06444 13.4667 4.19333C13.5956 4.32222 13.66 4.48 13.66 4.66667V10.6667ZM2.99996 1.33333V10.6667H8.32996V1.33333H2.99996ZM4.33246 5.33333H6.99746V6.66667H4.33246V5.33333ZM4.33246 2.66667H6.99746V4H4.33246V2.66667Z"
-                    fill="#3498DB"
-                  />
-                </svg>
+          <div class="current-project">
+            <div class="progress-item">
+              <div class="progress-header">
+                <div class="progress-icon progress-icon-complete">
+                  <svg
+                    width="12"
+                    height="10"
+                    viewBox="0 0 12 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4.58012 7.11997L10.7096 0.986639L11.6424 1.93331L4.58012 9.01331L0.342773 4.75997L1.27552 3.82664L4.58012 7.11997Z"
+                      fill="#22C55E"
+                    />
+                  </svg>
+                </div>
+                <span class="progress-name">Planning Department</span>
               </div>
-              <div class="permit-details">
-                <h4>Variance Application (PDD)</h4>
-                <p>Planned Development District requests</p>
-                <small>Processing time: 45-60 days</small>
+              <div class="progress-description">
+                Zoning compliance approved with conditions
               </div>
-              <button class="new-application-btn">New Application</button>
+              <div class="progress-date">Completed: July 30, 2025</div>
+              <div class="progress-badge">
+                <span class="status-badge status-complete">Complete</span>
+              </div>
             </div>
 
-            <div class="permit-item">
-              <div class="permit-icon green">
-                <svg
-                  width="16"
-                  height="14"
-                  viewBox="0 0 14 14"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0.330078 2.33335L4.99383 0.333354L8.99133 2.33335L13.1887 0.533354C13.2775 0.497799 13.3641 0.497799 13.4485 0.533354C13.5329 0.56891 13.5929 0.626688 13.6284 0.706688C13.6462 0.751132 13.6551 0.795576 13.6551 0.840021V11.6667L8.99133 13.6667L4.99383 11.6667L0.796453 13.4667C0.70762 13.5022 0.621007 13.5022 0.536616 13.4667C0.452224 13.4311 0.392261 13.3734 0.356728 13.2934C0.338961 13.2489 0.330078 13.2045 0.330078 13.16V2.33335ZM8.95135 3.80002L4.95385 1.80002L1.66258 3.21335V11.64L5.0338 10.2L9.0313 12.2L12.3226 10.7867V2.36002L8.95135 3.80002Z"
-                    fill="#22C55E"
-                  />
-                </svg>
+            <div class="progress-item orange">
+              <div class="progress-header">
+                <div class="progress-icon progress-icon-progress">
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.99258 13.6667C6.08648 13.6667 5.22035 13.4934 4.3942 13.1467C3.60359 12.8089 2.89958 12.3311 2.28219 11.7134C1.6648 11.0956 1.18732 10.3911 0.849753 9.60002C0.503303 8.77335 0.330078 7.90669 0.330078 7.00002C0.330078 6.09335 0.503303 5.22669 0.849753 4.40002C1.18732 3.60891 1.6648 2.90447 2.28219 2.28669C2.89958 1.66891 3.60359 1.19113 4.3942 0.853354C5.22035 0.506687 6.08648 0.333354 6.99258 0.333354C7.89868 0.333354 8.7648 0.506687 9.59095 0.853354C10.3816 1.19113 11.0856 1.66891 11.703 2.28669C12.3204 2.90447 12.7978 3.60891 13.1354 4.40002C13.4819 5.22669 13.6551 6.09335 13.6551 7.00002C13.6551 7.90669 13.4819 8.77335 13.1354 9.60002C12.7978 10.3911 12.3204 11.0956 11.703 11.7134C11.0856 12.3311 10.3816 12.8089 9.59095 13.1467C8.7648 13.4934 7.89868 13.6667 6.99258 13.6667ZM6.99258 12.3334C7.96086 12.3334 8.85808 12.0889 9.68423 11.6C10.4837 11.1289 11.1189 10.4934 11.5897 9.69335C12.0783 8.86669 12.3226 7.96891 12.3226 7.00002C12.3226 6.03113 12.0783 5.13335 11.5897 4.30669C11.1189 3.50669 10.4837 2.87113 9.68423 2.40002C8.85808 1.91113 7.96086 1.66669 6.99258 1.66669C6.02429 1.66669 5.12708 1.91113 4.30093 2.40002C3.50143 2.87113 2.86627 3.50669 2.39545 4.30669C1.90687 5.13335 1.66258 6.03113 1.66258 7.00002C1.66258 7.96891 1.90687 8.86669 2.39545 9.69335C2.86627 10.4934 3.50143 11.1289 4.30093 11.6C5.12708 12.0889 6.02429 12.3334 6.99258 12.3334ZM7.65883 7.00002H10.3238V8.33335H6.32633V3.66669H7.65883V7.00002Z"
+                      fill="#F97316"
+                    />
+                  </svg>
+                </div>
+                <span class="progress-name">Engineering</span>
               </div>
-              <div class="permit-details">
-                <h4>Land Use Application</h4>
-                <p>Zoning and land use changes</p>
-                <small>Processing time: 30-45 days</small>
+              <div class="progress-description">
+                Reviewing drainage calculations
               </div>
-              <button class="new-application-btn">New Application</button>
+              <div class="progress-date">Due: August 30, 2025</div>
+              <div class="progress-badge">
+                <span class="status-badge status-in-progress">In Progress</span>
+              </div>
             </div>
 
-            <div class="permit-item">
-              <div class="permit-icon orange">
-                <svg
-                  width="16"
-                  height="14"
-                  viewBox="0 0 14 14"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M6.98477 13.6667C6.07867 13.6667 5.21254 13.4934 4.38639 13.1467C3.59577 12.8089 2.89177 12.3311 2.27438 11.7134C1.65699 11.0956 1.17951 10.3911 0.841941 9.60002C0.495491 8.77335 0.322266 7.90669 0.322266 7.00002C0.322266 6.09335 0.495491 5.22669 0.841941 4.40002C1.17951 3.60891 1.65699 2.90447 2.27438 2.28669C2.89177 1.66891 3.59577 1.19113 4.38639 0.853354C5.21254 0.506687 6.07867 0.333354 6.98477 0.333354C7.89087 0.333354 8.75699 0.506687 9.58314 0.853354C10.3738 1.19113 11.0778 1.66891 11.6952 2.28669C12.3125 2.90447 12.79 3.60891 13.1276 4.40002C13.474 5.22669 13.6473 6.09335 13.6473 7.00002C13.6473 7.90669 13.474 8.77335 13.1276 9.60002C12.79 10.3911 12.3125 11.0956 11.6952 11.7134C11.0778 12.3311 10.3738 12.8089 9.58314 13.1467C8.75699 13.4934 7.89087 13.6667 6.98477 13.6667ZM6.98477 12.3334C7.95305 12.3334 8.85027 12.0889 9.67642 11.6C10.4759 11.1289 11.1111 10.4934 11.5819 9.69335C12.0705 8.86669 12.3148 7.96891 12.3148 7.00002C12.3148 6.03113 12.0705 5.13335 11.5819 4.30669C11.1111 3.50669 10.4759 2.87113 9.67642 2.40002C8.85027 1.91113 7.95305 1.66669 6.98477 1.66669C6.01648 1.66669 5.11927 1.91113 4.29312 2.40002C3.49362 2.87113 2.85846 3.50669 2.38764 4.30669C1.89906 5.13335 1.65477 6.03113 1.65477 7.00002C1.65477 7.96891 1.89906 8.86669 2.38764 9.69335C2.85846 10.4934 3.49362 11.1289 4.29312 11.6C5.11927 12.0889 6.01648 12.3334 6.98477 12.3334Z"
-                    fill="#F97316"
-                  />
-                </svg>
+            <div class="progress-item">
+              <div class="progress-header">
+                <div class="progress-icon progress-icon-complete">
+                  <svg
+                    width="12"
+                    height="10"
+                    viewBox="0 0 12 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4.58012 7.11997L10.7096 0.986639L11.6424 1.93331L4.58012 9.01331L0.342773 4.75997L1.27552 3.82664L4.58012 7.11997Z"
+                      fill="#22C55E"
+                    />
+                  </svg>
+                </div>
+                <span class="progress-name">Environmental</span>
               </div>
-              <div class="permit-details">
-                <h4>Right of Way Permit</h4>
-                <p>ROW access and modifications</p>
-                <small>Processing time: 15-20 days</small>
+              <div class="progress-description">Impact study approved</div>
+              <div class="progress-date">Completed: July 29, 2025</div>
+              <div class="progress-badge">
+                <span class="status-badge status-complete">Complete</span>
               </div>
-              <button class="new-application-btn">New Application</button>
             </div>
 
-            <div class="permit-item">
-              <div class="permit-icon purple">
-                <svg
-                  width="16"
-                  height="14"
-                  viewBox="0 0 14 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12.6588 0C12.8453 0 13.003 0.0644445 13.1318 0.193333C13.2606 0.322222 13.325 0.48 13.325 0.666666V11.3333C13.325 11.52 13.2606 11.6778 13.1318 11.8067C13.003 11.9356 12.8453 12 12.6588 12H0.66625C0.4797 12 0.322021 11.9356 0.193213 11.8067C0.0644042 11.6778 0 11.52 0 11.3333V0.666666C0 0.48 0.0644042 0.322222 0.193213 0.193333C0.322021 0.0644445 0.4797 0 0.66625 0H12.6588ZM5.99625 6.66667H1.3325V10.6667H5.99625V6.66667ZM11.9925 6.66667H7.32875V10.6667H11.9925V6.66667ZM5.99625 1.33333H1.3325V5.33333H5.99625V1.33333ZM11.9925 1.33333H7.32875V5.33333H11.9925V1.33333Z"
-                    fill="#A855F7"
-                  />
-                </svg>
+            <div class="progress-item orange">
+              <div class="progress-header">
+                <div class="progress-icon progress-icon-progress">
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.99258 13.6667C6.08648 13.6667 5.22035 13.4934 4.3942 13.1467C3.60359 12.8089 2.89958 12.3311 2.28219 11.7134C1.6648 11.0956 1.18732 10.3911 0.849753 9.60002C0.503303 8.77335 0.330078 7.90669 0.330078 7.00002C0.330078 6.09335 0.503303 5.22669 0.849753 4.40002C1.18732 3.60891 1.6648 2.90447 2.28219 2.28669C2.89958 1.66891 3.60359 1.19113 4.3942 0.853354C5.22035 0.506687 6.08648 0.333354 6.99258 0.333354C7.89868 0.333354 8.7648 0.506687 9.59095 0.853354C10.3816 1.19113 11.0856 1.66891 11.703 2.28669C12.3204 2.90447 12.7978 3.60891 13.1354 4.40002C13.4819 5.22669 13.6551 6.09335 13.6551 7.00002C13.6551 7.90669 13.4819 8.77335 13.1354 9.60002C12.7978 10.3911 12.3204 11.0956 11.703 11.7134C11.0856 12.3311 10.3816 12.8089 9.59095 13.1467C8.7648 13.4934 7.89868 13.6667 6.99258 13.6667ZM6.99258 12.3334C7.96086 12.3334 8.85808 12.0889 9.68423 11.6C10.4837 11.1289 11.1189 10.4934 11.5897 9.69335C12.0783 8.86669 12.3226 7.96891 12.3226 7.00002C12.3226 6.03113 12.0783 5.13335 11.5897 4.30669C11.1189 3.50669 10.4837 2.87113 9.68423 2.40002C8.85808 1.91113 7.96086 1.66669 6.99258 1.66669C6.02429 1.66669 5.12708 1.91113 4.30093 2.40002C3.50143 2.87113 2.86627 3.50669 2.39545 4.30669C1.90687 5.13335 1.66258 6.03113 1.66258 7.00002C1.66258 7.96891 1.90687 8.86669 2.39545 9.69335C2.86627 10.4934 3.50143 11.1289 4.30093 11.6C5.12708 12.0889 6.02429 12.3334 6.99258 12.3334ZM7.65883 7.00002H10.3238V8.33335H6.32633V3.66669H7.65883V7.00002Z"
+                      fill="#F97316"
+                    />
+                  </svg>
+                </div>
+                <span class="progress-name">Fire Department</span>
               </div>
-              <div class="permit-details">
-                <h4>Subdivision/Platting Permit</h4>
-                <p>Land division and platting</p>
-                <small>Processing time: 60-90 days</small>
+              <div class="progress-description">Access review in progress</div>
+              <div class="progress-date">Due: August 15, 2025</div>
+              <div class="progress-badge">
+                <span class="status-badge status-in-progress">In Progress</span>
               </div>
-              <button class="new-application-btn">New Application</button>
-            </div>
-
-            <div class="permit-item">
-              <div class="permit-icon green">
-                <svg
-                  width="16"
-                  height="14"
-                  viewBox="0 0 13 14"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2.97652 0.333354C3.85597 0.333354 4.6688 0.564466 5.415 1.02669C6.14343 1.47113 6.70752 2.07113 7.10727 2.82669C7.50702 2.26669 8.00893 1.82224 8.613 1.49335C9.24371 1.16446 9.91885 1.00002 10.6384 1.00002H12.9703V2.66669C12.9703 3.44891 12.7748 4.1778 12.384 4.85335C12.002 5.51113 11.4823 6.03113 10.8249 6.41335C10.1498 6.80447 9.42138 7.00002 8.63965 7.00002H7.64027V7.66669H10.9715V12.3334C10.9715 12.5734 10.9116 12.7956 10.7916 13C10.6717 13.2045 10.5096 13.3667 10.3053 13.4867C10.101 13.6067 9.87887 13.6667 9.63902 13.6667H4.30902C4.06917 13.6667 3.84709 13.6067 3.64277 13.4867C3.43846 13.3667 3.27634 13.2045 3.15641 13C3.03649 12.7956 2.97652 12.5734 2.97652 12.3334V7.66669H6.30777V6.33335H4.97527C4.13136 6.33335 3.34518 6.12002 2.61675 5.69335C1.91497 5.28446 1.35976 4.72891 0.951123 4.02669C0.524723 3.2978 0.311523 2.51113 0.311523 1.66669V0.333354H2.97652ZM9.63902 9.00002H4.30902V12.3334H9.63902V9.00002ZM11.6378 2.33335H10.6384C10.0965 2.33335 9.59683 2.46891 9.13934 2.74002C8.68184 3.01113 8.31763 3.37558 8.04669 3.83335C7.77574 4.29113 7.64027 4.79113 7.64027 5.33335V5.66669H8.63965C9.18153 5.66669 9.68122 5.53113 10.1387 5.26002C10.5962 4.98891 10.9604 4.62446 11.2314 4.16669C11.5023 3.70891 11.6378 3.20891 11.6378 2.66669V2.33335ZM2.97652 1.66669H1.64402C1.64402 2.27113 1.79282 2.82891 2.09041 3.34002C2.388 3.85113 2.79219 4.25558 3.30299 4.55335C3.81378 4.85113 4.37121 5.00002 4.97527 5.00002H6.30777C6.30777 4.39558 6.15898 3.8378 5.86139 3.32669C5.56379 2.81558 5.1596 2.41113 4.64881 2.11335C4.13802 1.81558 3.58059 1.66669 2.97652 1.66669Z"
-                    fill="#16A34A"
-                  />
-                </svg>
-              </div>
-              <div class="permit-details">
-                <h4>Tree Mitigation Permit</h4>
-                <p>Tree removal and mitigation plans</p>
-                <small>Processing time: 10-15 days</small>
-              </div>
-              <button class="new-application-btn">New Application</button>
-            </div>
-
-            <div class="permit-item">
-              <div class="permit-icon blue">
-                <svg
-                  width="16"
-                  height="14"
-                  viewBox="0 0 15 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12.6588 2H14.6575V3.33333H13.9913V10.6667H14.6575V12H0V10.6667H0.66625V3.33333H0V2H1.99875V0.666666C1.99875 0.48 2.06315 0.322222 2.19196 0.193333C2.32077 0.0644445 2.47845 0 2.665 0H11.9925C12.1791 0 12.3367 0.0644445 12.4655 0.193333C12.5943 0.322222 12.6588 0.48 12.6588 0.666666V2ZM12.6588 3.33333H1.99875V10.6667H3.9975V6H5.33V10.6667H6.6625V6H7.995V10.6667H9.3275V6H10.66V10.6667H12.6588V3.33333ZM3.33125 1.33333V2H11.3263V1.33333H3.33125Z"
-                    fill="#3B82F6"
-                  />
-                </svg>
-              </div>
-              <div class="permit-details">
-                <h4>Zoning Permit</h4>
-                <p>Standard zoning compliance</p>
-                <small>Processing time: 20-30 days</small>
-              </div>
-              <button class="new-application-btn">New Application</button>
             </div>
           </div>
         </div>
 
-        <!-- Current Applications Dashboard -->
-        <div class="card current-applications">
-          <h3>Current Applications Dashboard</h3>
+        <!-- Communication Log -->
+        <div class="communication-section">
+          <h2 class="section-title">Communication Log</h2>
 
-          <div class="priority-reviews">
-            <h4>Priority Reviews</h4>
-            <div class="review-item">
-              <div class="review-details">
-                <h5>PDD-2024-003 - Residential Mixed Use</h5>
-                <p>Variance: Setback reduction request</p>
-                <small>Public hearing: Aug 15, 2025</small>
+          <div class="current-project">
+            <div class="comm-log-item">
+              <div class="comm-date">July 31, 2025 - 2:30 PM</div>
+              <div class="comm-message">
+                Engineering requesting additional drainage details from
+                applicant
               </div>
-              <span class="status-badge under-review">Under Review</span>
             </div>
 
-            <div class="review-item">
-              <div class="review-details">
-                <h5>SUB-2024-012 - Lake Vista Phase 4</h5>
-                <p>45-lot subdivision</p>
-                <small>Engineering review complete</small>
+            <div class="comm-log-item green">
+              <div class="comm-date">July 30, 2025 - 4:15 PM</div>
+              <div class="comm-message">
+                Planning Department approved with minor conditions
               </div>
-              <span class="status-badge ready-approval"
-                >Ready for Approval</span
-              >
             </div>
 
-            <div class="review-item">
-              <div class="review-details">
-                <h5>ROW-2024-089 - Highway 71 Access</h5>
-                <p>Commercial driveway permit</p>
-                <small>TxDOT coordination required</small>
+            <div class="comm-log-item">
+              <div class="comm-date">July 29, 2025 - 1:00 PM</div>
+              <div class="comm-message">
+                Environmental Services completed review - no issues found
               </div>
-              <span class="status-badge external-review">External Review</span>
+            </div>
+
+            <div class="comm-log-item orange">
+              <div class="comm-date">July 28, 2025 - 9:00 AM</div>
+              <div class="comm-message">
+                Project routed to all departments for Phase 2 review
+              </div>
             </div>
           </div>
 
-          <div class="quick-actions">
-            <h4>Quick Actions</h4>
-            <div class="action-buttons">
-              <button class="action-btn primary">
-                <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 13 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M4.46176 0.166646V1.33331H7.96051V0.166646H9.12676V1.33331H11.4593C11.6225 1.33331 11.7605 1.3897 11.8733 1.50248C11.986 1.61526 12.0424 1.75331 12.0424 1.91665V11.25C12.0424 11.4133 11.986 11.5514 11.8733 11.6641C11.7605 11.7769 11.6225 11.8333 11.4593 11.8333H0.963008C0.799733 11.8333 0.661727 11.7769 0.548989 11.6641C0.436252 11.5514 0.379883 11.4133 0.379883 11.25V1.91665C0.379883 1.75331 0.436252 1.61526 0.548989 1.50248C0.661727 1.3897 0.799733 1.33331 0.963008 1.33331H3.29551V0.166646H4.46176ZM10.8761 5.99998H1.54613V10.6666H10.8761V5.99998ZM3.29551 2.49998H1.54613V4.83331H10.8761V2.49998H9.12676V3.66665H7.96051V2.49998H4.46176V3.66665H3.29551V2.49998Z"
-                    fill="white"
-                  />
-                </svg>
-                Schedule Hearing
-              </button>
-              <button class="action-btn primary">
-                <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 11 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M4.7607 3.08331H5.92695V8.91665H4.7607V3.08331ZM7.0932 5.41665H8.25945V8.91665H7.0932V5.41665ZM2.4282 6.58331H3.59445V8.91665H2.4282V6.58331ZM7.0932 1.33331H1.26195V10.6666H9.4257V3.66665H7.0932V1.33331ZM0.0957031 0.74998C0.0957031 0.586646 0.152072 0.44859 0.264809 0.335813C0.377547 0.223035 0.515553 0.166646 0.678828 0.166646H7.67633L10.592 3.08331V11.25C10.592 11.4055 10.5356 11.5416 10.4228 11.6583C10.3101 11.775 10.1721 11.8333 10.0088 11.8333H0.678828C0.515553 11.8333 0.377547 11.7769 0.264809 11.6641C0.152072 11.5514 0.0957031 11.4133 0.0957031 11.25V0.74998Z"
-                    fill="white"
-                  />
-                </svg>
-                Generate Report
-              </button>
-              <button class="action-btn primary">
-                <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 11 13"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M5.24813 11.0308L8.12876 8.13751C8.65746 7.6164 9.01511 7.00195 9.20171 6.29418C9.38054 5.60195 9.38054 4.90973 9.20171 4.21751C9.01511 3.50973 8.65941 2.89334 8.13459 2.36834C7.60978 1.84334 6.99361 1.48751 6.28609 1.30084C5.59411 1.12195 4.90214 1.12195 4.21016 1.30084C3.50264 1.48751 2.88647 1.84334 2.36166 2.36834C1.83684 2.89334 1.48114 3.50973 1.29454 4.21751C1.11571 4.90973 1.11571 5.60195 1.29454 6.29418C1.48114 7.00195 1.83879 7.6164 2.36749 8.13751L5.24813 11.0308ZM5.24813 12.6758L1.53945 8.96584C0.863025 8.29695 0.408188 7.50362 0.174938 6.58584C-0.0583125 5.69918 -0.0583125 4.81251 0.174938 3.92584C0.408188 3.00806 0.861081 2.21279 1.53362 1.54001C2.20616 0.867231 3.00115 0.410287 3.9186 0.169175C4.80495 -0.0563803 5.6913 -0.0563803 6.57765 0.169175C7.4951 0.410287 8.29009 0.867231 8.96263 1.54001C9.63517 2.21279 10.0881 3.00806 10.3213 3.92584C10.5546 4.81251 10.5546 5.69918 10.3213 6.58584C10.0881 7.50362 9.63323 8.29695 8.9568 8.96584L5.24813 12.6758ZM5.24813 6.42251C5.45805 6.42251 5.65242 6.37001 5.83125 6.26501C6.01008 6.16001 6.15197 6.01806 6.25693 5.83918C6.36189 5.66029 6.41437 5.46584 6.41437 5.25584C6.41437 5.04584 6.36189 4.8514 6.25693 4.67251C6.15197 4.49362 6.01008 4.35168 5.83125 4.24668C5.65242 4.14168 5.45805 4.08918 5.24813 4.08918C5.0382 4.08918 4.84382 4.14168 4.665 4.24668C4.48618 4.35168 4.34428 4.49362 4.23932 4.67251C4.13436 4.8514 4.08187 5.04584 4.08187 5.25584C4.08187 5.46584 4.13436 5.66029 4.23932 5.83918C4.34428 6.01806 4.48618 6.16001 4.665 6.26501C4.84382 6.37001 5.0382 6.42251 5.24813 6.42251ZM5.24813 7.58918C4.82828 7.58918 4.43953 7.48418 4.08187 7.27418C3.72423 7.06418 3.44044 6.78029 3.23051 6.42251C3.02059 6.06473 2.91563 5.6739 2.91563 5.25001C2.91563 4.82612 3.02059 4.43723 3.23051 4.08334C3.44044 3.72945 3.72423 3.44751 4.08187 3.23751C4.43953 3.02751 4.82828 2.92251 5.24813 2.92251C5.66797 2.92251 6.05673 3.02751 6.41437 3.23751C6.77203 3.44751 7.05581 3.72945 7.26574 4.08334C7.47566 4.43723 7.58063 4.82612 7.58063 5.25001C7.58063 5.6739 7.47566 6.06473 7.26574 6.42251C7.05581 6.78029 6.77203 7.06418 6.41437 7.27418C6.05673 7.48418 5.66797 7.58918 5.24813 7.58918Z"
-                    fill="white"
-                  />
-                </svg>
-                View GIS Map
-              </button>
-              <button class="action-btn primary">
-                <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 11 14"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M1.64477 10.0567H9.80852V5.99667C9.80852 5.25778 9.62192 4.56945 9.24872 3.93167C8.89107 3.30945 8.40513 2.81556 7.7909 2.45001C7.15335 2.08445 6.46527 1.90167 5.72664 1.90167C4.98802 1.90167 4.29993 2.08445 3.66238 2.45001C3.04815 2.81556 2.56222 3.30945 2.20457 3.93167C1.83137 4.56945 1.64477 5.25778 1.64477 5.99667V10.0567ZM5.72664 0.723339C6.67519 0.723339 7.55765 0.96445 8.37403 1.44667C9.16708 1.91334 9.79685 2.54334 10.2634 3.33667C10.7376 4.15334 10.9748 5.04001 10.9748 5.99667V11.2233H0.478516V5.99667C0.478516 5.04001 0.715653 4.15334 1.18993 3.33667C1.65643 2.54334 2.2862 1.91334 3.07925 1.44667C3.89563 0.972228 4.77809 0.735005 5.72664 0.735005V0.723339ZM4.26883 11.8067H7.18445C7.18445 12.0711 7.11837 12.3161 6.98619 12.5417C6.85402 12.7672 6.67713 12.9461 6.45555 13.0783C6.23396 13.2106 5.99099 13.2767 5.72664 13.2767C5.46229 13.2767 5.21932 13.2106 4.99773 13.0783C4.77615 12.9461 4.59927 12.7672 4.46709 12.5417C4.33492 12.3161 4.26883 12.075 4.26883 11.8183V11.8067Z"
-                    fill="white"
-                  />
-                </svg>
-                Send Notifications
-              </button>
-            </div>
-          </div>
-
-          <div class="upcoming-hearings">
-            <div class="hearing-date">
-              <h4>Upcoming Public Hearings</h4>
-              <strong>Aug 15, 2025 - 7:00 PM</strong>
-              <ul>
-                <li>• PDD-2024-003 - Mixed Use Development</li>
-                <li>• VAR-2024-007 - Residential Setback Variance</li>
-              </ul>
-              <button class="manage-agenda-btn">Manage Agenda</button>
-            </div>
+          <div class="add-update-section">
+            <h3 class="add-update-title">Add Status Update</h3>
+            <textarea
+              placeholder="Enter status update..."
+              class="update-textarea"
+            ></textarea>
+            <button class="add-update-btn">Add Update</button>
           </div>
         </div>
       </div>
