@@ -116,10 +116,6 @@
   gap: 20px;
 }
 
-.map-container {
-  margin-top: -46px !important;
-}
-
 .content-section {
   background: white;
   border-radius: 8px;
@@ -905,7 +901,8 @@
   margin-bottom: 15px;
 }
 .map-area {
-  padding: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .map-title,
