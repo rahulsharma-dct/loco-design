@@ -12,8 +12,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="version-control.css" />
     <link rel="stylesheet" href="sidebar.css" />
+    <link rel="stylesheet" href="department.css" />
   </head>
   <body>
     <header class="header">
@@ -232,268 +232,216 @@
         </a>
       </nav>
     </div>
+    <!-- Completely replaced main content with Department Routing Interface -->
     <main class="main-content">
       <div class="dashboard-header">
         <div>
           <div class="dashboard-title">
-            Version Control Dashboard - Permit #2024-156
+            Project #PR1-2024-156 - Department Routing
           </div>
         </div>
-        <div class="dashboard-subtitle">
-          All document versions and change tracking
-        </div>
+        <div class="dashboard-subtitle">Phase 2: Departmental Review</div>
       </div>
 
-      <div class="content-grid">
-        <div class="version-history">
-          <h2 class="section-title">Version History - Site Development Plan</h2>
-
-          <div class="version-item green">
-            <div class="version-header">
-              <div class="version-name">v1.2 - Current</div>
-              <div class="version-badges">
-                <span class="badge badge-current">Current</span>
-                <span class="badge badge-download">Download</span>
-              </div>
-            </div>
-            <div class="version-details">
-              Uploaded: Aug 1, 2024 2:30 PM<br />
-              By: ABC Development LLC<br />
-              Size: 2.8 MB
-            </div>
+      <div class="departments-grid">
+        <div class="department-card in-progress">
+          <div class="department-info">
+            <div class="department-name">Planning Department</div>
+            <div class="department-status status-in-progress">In Progress</div>
           </div>
-
-          <div class="version-item">
-            <div class="version-header">
-              <div class="version-name">v1.1</div>
-              <div class="version-badges">
-                <span class="badge badge-view">View</span>
-                <span class="badge badge-download">Download</span>
-              </div>
-            </div>
-            <div class="version-details">
-              Uploaded: July 30, 2024 4:15 PM<br />
-              By: ABC Development LLC<br />
-              Size: 2.5 MB
-            </div>
-            <div class="version-status status-reviewed">
-              Status: Reviewed with comments
-            </div>
-          </div>
-
-          <div class="version-item">
-            <div class="version-header">
-              <div class="version-name">v1.0 - Original</div>
-              <div class="version-badges">
-                <span class="badge badge-view">View</span>
-                <span class="badge badge-archive">Archive</span>
-              </div>
-            </div>
-            <div class="version-details">
-              Uploaded: July 28, 2024 9:00 AM<br />
-              By: ABC Development LLC<br />
-              Size: 2.2 MB
-            </div>
-            <div class="version-status status-rejected">Status: Rejected</div>
+          <div class="department-details">
+            Assigned: Sarah Johnson<br />
+            Due: August 15, 2025
           </div>
         </div>
 
-        <div class="right-panel">
-          <div class="panel-section">
-            <h3 class="section-title">Change Log & Notifications</h3>
+        <div class="department-card pending">
+          <div class="department-info">
+            <div class="department-name">Engineering</div>
+            <div class="department-status status-pending">Pending</div>
+          </div>
+          <div class="department-details">
+            Assigned: Mike Chen<br />
+            Due: August 20, 2025
+          </div>
+        </div>
 
-            <h4
-              style="
-                font-size: 16px;
-                font-weight: 600;
-                color: #2d3748;
-                margin-bottom: 10px;
-              "
-            >
-              Version 1.2 Changes (Current)
-            </h4>
+        <div class="department-card complete">
+          <div class="department-info">
+            <div class="department-name">Environmental</div>
+            <div class="department-status status-complete">Complete</div>
+          </div>
+          <div class="department-details">
+            Assigned: Lisa Rodriguez<br />
+            Due: August 12, 2025
+          </div>
+        </div>
 
-            <div class="system-detected">
-              <h5
-                style="
-                  font-size: 15px;
-                  font-weight: 600;
-                  color: #2c3e50;
-                  margin-bottom: 8px;
-                "
-              >
-                System-Detected Changes:
-              </h5>
-              <ul class="changes-list">
-                <li>Sheet 2: Building height updated (28' → 26')</li>
-                <li>Sheet 3: New drainage details added</li>
-                <li>Sheet 4: Parking spaces increased (45 → 48)</li>
-                <li>Title block: Revision date updated</li>
-              </ul>
-            </div>
-            <div class="applicant">
-              <h5
-                style="
-                  font-size: 15px;
-                  font-weight: 600;
-                  color: #2c3e50;
-
-                  margin-bottom: 8px;
-                "
-              >
-                Applicant Notes:
-              </h5>
-              <div class="applicant-notes">
-                "Revised per Planning Department comments dated 7/30/24.
-                Addressed all items in review letter PD-2024-156-001".
-              </div>
-            </div>
-            <div class="validation">
-              <h5
-                style="font-size: 15px; font-weight: 600; color: #2c3e50"
-                class="alert-item"
-              >
-                Validation Alerts:
-              </h5>
-              <div class="validation-alerts">
-                <ul class="changes-list">
-                  <li>New version requires re-validation</li>
-                  <li>Engineering review may be needed for drainage changes</li>
-                </ul>
-              </div>
+        <div class="department-card under-review">
+          <div class="department-info">
+            <div class="department-name">Fire Department</div>
+            <div class="department-status status-under-review">
+              Under Review
             </div>
           </div>
-
-          <div class="panel-section">
-            <h4
-              style="
-                font-size: 17px;
-                font-weight: 600;
-                color: #2d3748;
-                margin-bottom: 15px;
-              "
-            >
-              Automatic Notifications Sent To:
-            </h4>
-
-            <div class="notification-item">
-              <span class="notification-text"
-                ><svg
-                  style="margin-right: 5px"
-                  width="12"
-                  height="12"
-                  viewBox="0 0 14 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0.996328 0H12.9888C13.1754 0 13.3331 0.0644445 13.4619 0.193333C13.5907 0.322222 13.6551 0.48 13.6551 0.666666V11.3333C13.6551 11.52 13.5907 11.6778 13.4619 11.8067C13.3331 11.9356 13.1754 12 12.9888 12H0.996328C0.809778 12 0.652099 11.9356 0.523291 11.8067C0.394482 11.6778 0.330078 11.52 0.330078 11.3333V0.666666C0.330078 0.48 0.394482 0.322222 0.523291 0.193333C0.652099 0.0644445 0.809778 0 0.996328 0ZM12.3226 2.82667L7.04588 7.56L1.66258 2.81333V10.6667H12.3226V2.82667ZM2.00903 1.33333L7.03255 5.77333L11.9895 1.33333H2.00903Z"
-                    fill="#6B7280"
-                  />
-                </svg>
-                All reviewing departments</span
-              >
-              <span class="notification-status">Sent</span>
-            </div>
-            <div class="notification-item">
-              <span class="notification-text"
-                ><svg
-                  style="margin-right: 5px"
-                  width="12"
-                  height="12"
-                  viewBox="0 0 14 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0.996328 0H12.9888C13.1754 0 13.3331 0.0644445 13.4619 0.193333C13.5907 0.322222 13.6551 0.48 13.6551 0.666666V11.3333C13.6551 11.52 13.5907 11.6778 13.4619 11.8067C13.3331 11.9356 13.1754 12 12.9888 12H0.996328C0.809778 12 0.652099 11.9356 0.523291 11.8067C0.394482 11.6778 0.330078 11.52 0.330078 11.3333V0.666666C0.330078 0.48 0.394482 0.322222 0.523291 0.193333C0.652099 0.0644445 0.809778 0 0.996328 0ZM12.3226 2.82667L7.04588 7.56L1.66258 2.81333V10.6667H12.3226V2.82667ZM2.00903 1.33333L7.03255 5.77333L11.9895 1.33333H2.00903Z"
-                    fill="#6B7280"
-                  />
-                </svg>
-                Project manager</span
-              >
-              <span class="notification-status">Sent</span>
-            </div>
-            <div class="notification-item">
-              <span class="notification-text"
-                ><svg
-                  style="margin-right: 5px"
-                  width="12"
-                  height="12"
-                  viewBox="0 0 14 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0.996328 0H12.9888C13.1754 0 13.3331 0.0644445 13.4619 0.193333C13.5907 0.322222 13.6551 0.48 13.6551 0.666666V11.3333C13.6551 11.52 13.5907 11.6778 13.4619 11.8067C13.3331 11.9356 13.1754 12 12.9888 12H0.996328C0.809778 12 0.652099 11.9356 0.523291 11.8067C0.394482 11.6778 0.330078 11.52 0.330078 11.3333V0.666666C0.330078 0.48 0.394482 0.322222 0.523291 0.193333C0.652099 0.0644445 0.809778 0 0.996328 0ZM12.3226 2.82667L7.04588 7.56L1.66258 2.81333V10.6667H12.3226V2.82667ZM2.00903 1.33333L7.03255 5.77333L11.9895 1.33333H2.00903Z"
-                    fill="#6B7280"
-                  />
-                </svg>
-                Applicant confirmation</span
-              >
-              <span class="notification-status">Sent</span>
-            </div>
+          <div class="department-details">
+            Assigned: Tom Wilson<br />
+            Due: August 18, 2025
           </div>
         </div>
       </div>
 
-      <div class="settings-section">
-        <h2 class="section-title">Version Control Settings</h2>
+      <div class="content-sections">
+        <div class="content-section">
+          <h2 class="section-title">Document Package Distribution</h2>
+          <p style="font-size: 14px; color: #4a5568; margin-bottom: 15px">
+            <strong>Sent to All Departments:</strong>
+          </p>
 
-        <div class="settings-grid">
-          <div class="settings-group">
-            <h4>Auto-Notification Rules</h4>
-            <div class="checkbox-item">
-              <input type="checkbox" id="notify-new" checked />
-              <label for="notify-new"
-                >Notify all reviewers on new version</label
+          <div class="document-item">
+            <div class="document-name">
+              <svg
+                width="12"
+                height="14"
+                viewBox="0 0 12 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
               >
+                <path
+                  d="M11.9886 4.33335V13C11.9886 13.1867 11.9242 13.3445 11.7954 13.4734C11.6666 13.6022 11.5089 13.6667 11.3223 13.6667H0.662344C0.475794 13.6667 0.318115 13.6022 0.189306 13.4734C0.0604979 13.3445 -0.00390625 13.1867 -0.00390625 13V1.00002C-0.00390625 0.813354 0.0604979 0.655577 0.189306 0.526688C0.318115 0.397799 0.475794 0.333354 0.662344 0.333354H7.99109L11.9886 4.33335ZM10.6561 5.00002H7.32484V1.66669H1.32859V12.3334H10.6561V5.00002ZM3.32734 3.66669H5.32609V5.00002H3.32734V3.66669ZM3.32734 6.33335H8.65734V7.66669H3.32734V6.33335ZM3.32734 9.00002H8.65734V10.3334H3.32734V9.00002Z"
+                  fill="#3B82F6"
+                />
+              </svg>
+              Complete Application Package
             </div>
-            <div class="checkbox-item">
-              <input type="checkbox" id="auto-flag" checked />
-              <label for="auto-flag"
-                >Auto-flag major changes for re-review</label
-              >
-            </div>
-            <div class="checkbox-item">
-              <input type="checkbox" id="lock-previous" />
-              <label for="lock-previous"
-                >Lock previous versions after approval</label
-              >
-            </div>
-            <div class="checkbox-item">
-              <input type="checkbox" id="require-summary" checked />
-              <label for="require-summary"
-                >Require change summary for uploads</label
-              >
-            </div>
+            <span class="status-sent">Sent</span>
           </div>
 
-          <div class="settings-group">
-            <h4 style="color: #2c3e50">Retention Policy</h4>
-            <select class="dropdown-select">
-              <option value="permanent">Keep all versions permanently</option>
-              <option value="30days">Keep for 30 days</option>
-              <option value="90days">Keep for 90 days</option>
-              <option value="1year">Keep for 1 year</option>
-            </select>
+          <div class="document-item">
+            <div class="document-name">
+              <svg
+                width="16"
+                height="14"
+                viewBox="0 0 16 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.99559 12.2666V3.39998C1.99559 3.25775 2.03556 3.12886 2.11551 3.01331C2.19546 2.89775 2.30206 2.81775 2.43531 2.77331L8.87129 0.426641C8.96012 0.391087 9.04673 0.393309 9.13112 0.433309C9.21552 0.473309 9.27104 0.537753 9.29769 0.626642C9.31545 0.662197 9.32434 0.697753 9.32434 0.733309V4.03998L13.535 5.43998C13.6683 5.48442 13.7771 5.56664 13.8615 5.68664C13.9459 5.80664 13.9881 5.93775 13.9881 6.07998V12.2666H15.3206V13.6H0.663086V12.2666H1.99559ZM3.32809 12.2666H7.99184V2.15998L3.32809 3.86664V12.2666ZM12.6556 12.2666V6.55998L9.32434 5.43998V12.2666H12.6556Z"
+                  fill="#F97316"
+                />
+              </svg>
+              Site Development Plans
+            </div>
+            <span class="status-sent">Sent</span>
+          </div>
 
-            <h4 style="margin-top: 20px; color: #2c3e50">
-              Version Naming Convention
-            </h4>
-            <select class="dropdown-select">
-              <option value="automatic">Automatic (v1.0, v1.1, etc.)</option>
-              <option value="manual">Manual naming</option>
-              <option value="date">Date-based (YYYY-MM-DD)</option>
-            </select>
+          <div class="document-item line">
+            <div class="document-name">
+              <svg
+                width="12"
+                height="14"
+                viewBox="0 0 12 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.9886 0.666646V1.99998C11.9886 4.0622 11.6244 5.81776 10.8959 7.26665C10.2208 8.61776 9.26585 9.63998 8.03107 10.3333C6.85847 11 5.51264 11.3333 3.99359 11.3333H1.48849C1.38189 11.9378 1.32859 12.6044 1.32859 13.3333H-0.00390625C-0.00390625 12.4266 0.0716021 11.5955 0.222619 10.84C0.0716021 9.97776 -0.00390625 8.80887 -0.00390625 7.33331C-0.00390625 6.42665 0.169319 5.55998 0.515769 4.73331C0.853335 3.9422 1.33081 3.23776 1.94821 2.61998C2.5656 2.0022 3.2696 1.52442 4.06022 1.18665C4.88637 0.839979 5.75249 0.666646 6.65859 0.666646C6.92509 0.666646 7.34261 0.71109 7.91114 0.799979C8.37308 0.871091 8.73729 0.915535 9.00379 0.933312C9.45684 0.968868 9.90101 0.973312 10.3363 0.946646C10.8604 0.902202 11.4112 0.808868 11.9886 0.666646ZM6.65859 1.99998C5.69031 1.99998 4.79309 2.24442 3.96694 2.73331C3.16744 3.20442 2.53229 3.83998 2.06147 4.63998C1.57289 5.46665 1.32859 6.36442 1.32859 7.33331V8.02665C1.73723 7.38665 2.25246 6.79109 2.87429 6.23998C3.46948 5.71554 4.1757 5.2222 4.99297 4.75998L5.65922 5.90665C4.67317 6.47553 3.87811 7.07554 3.27404 7.70665C2.63444 8.37331 2.15919 9.13776 1.84827 9.99998H3.99359C5.33498 9.99998 6.50091 9.70665 7.49141 9.11998C8.4819 8.53331 9.24364 7.67109 9.77664 6.53331C10.3363 5.35109 10.6294 3.92442 10.6561 2.25331C10.2119 2.29776 9.75888 2.31109 9.29694 2.29331C8.87943 2.26665 8.39529 2.21331 7.84452 2.13331C7.45365 2.07109 7.19159 2.03331 7.05834 2.01998C6.92509 2.00665 6.79184 1.99998 6.65859 1.99998Z"
+                  fill="#22C55E"
+                />
+              </svg>
+              Environmental Impact Study
+            </div>
+            <span class="status-sent">Sent</span>
+          </div>
+
+          <p
+            style="
+              font-size: 14px;
+              color: #4a5568;
+              margin-top: 20px;
+              margin-bottom: 15px;
+            "
+          >
+            <strong>Department-Specific Documents:</strong>
+          </p>
+
+          <div class="routing-item">
+            <div class="document-name">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.22226 10.3333C0.937994 9.84445 0.720353 9.3289 0.569336 8.78667C0.898019 8.61778 1.1623 8.37334 1.36217 8.05334C1.56205 7.73334 1.66199 7.38223 1.66199 7.00001C1.66199 6.61778 1.56205 6.26667 1.36217 5.94667C1.1623 5.62667 0.898019 5.38223 0.569336 5.21334C0.880253 4.10223 1.43546 3.13778 2.23496 2.32001C2.54588 2.52445 2.89011 2.63334 3.26765 2.64667C3.64519 2.66001 3.9983 2.57112 4.32699 2.38001C4.65567 2.1889 4.90884 1.92667 5.08651 1.59334C5.26418 1.26001 5.34413 0.911119 5.32636 0.546674C6.43678 0.253341 7.54719 0.253341 8.65761 0.546674C8.63984 0.911119 8.71979 1.26001 8.89746 1.59334C9.07513 1.92667 9.3283 2.1889 9.65699 2.38001C9.98567 2.57112 10.3388 2.66001 10.7163 2.64667C11.0939 2.63334 11.4381 2.52445 11.749 2.32001C12.1399 2.7289 12.4774 3.17778 12.7617 3.66667C13.046 4.15556 13.2636 4.67112 13.4146 5.21334C13.086 5.38223 12.8217 5.62667 12.6218 5.94667C12.4219 6.26667 12.322 6.61778 12.322 7.00001C12.322 7.38223 12.4219 7.73334 12.6218 8.05334C12.8217 8.37334 13.086 8.61778 13.4146 8.78667C13.1037 9.89778 12.5485 10.8622 11.749 11.68C11.4381 11.4756 11.0939 11.3667 10.7163 11.3533C10.3388 11.34 9.98567 11.4289 9.65699 11.62C9.3283 11.8111 9.07513 12.0733 8.89746 12.4067C8.71979 12.74 8.63984 13.0889 8.65761 13.4533C7.54719 13.7467 6.43678 13.7467 5.32636 13.4533C5.34413 13.0889 5.26418 12.74 5.08651 12.4067C4.90884 12.0733 4.65567 11.8111 4.32699 11.62C3.9983 11.4289 3.64519 11.34 3.26765 11.3533C2.89011 11.3667 2.54588 11.4756 2.23496 11.68C1.84409 11.2711 1.50653 10.8222 1.22226 10.3333ZM4.99324 10.4667C5.34857 10.6711 5.65504 10.9333 5.91266 11.2533C6.17028 11.5733 6.36571 11.9245 6.49896 12.3067C6.82764 12.3422 7.15633 12.3422 7.48501 12.3067C7.61826 11.9245 7.81147 11.5733 8.06465 11.2533C8.31782 10.9333 8.6243 10.6689 8.98407 10.46C9.34385 10.2511 9.72805 10.1156 10.1367 10.0533C10.5453 9.99112 10.9451 10.0045 11.3359 10.0933C11.5314 9.81778 11.7002 9.5289 11.8423 9.22667C11.5669 8.92445 11.3559 8.58223 11.2093 8.20001C11.0628 7.81778 10.9895 7.41778 10.9895 7.00001C10.9895 6.58223 11.0628 6.18223 11.2093 5.80001C11.3559 5.41778 11.5669 5.07556 11.8423 4.77334C11.7712 4.62223 11.6935 4.47556 11.6091 4.33334C11.5247 4.19112 11.4337 4.0489 11.3359 3.90667C10.9451 3.99556 10.5453 4.0089 10.1367 3.94667C9.72805 3.88445 9.34607 3.7489 8.99074 3.54001C8.6354 3.33112 8.32893 3.06667 8.07131 2.74667C7.81369 2.42667 7.61826 2.07556 7.48501 1.69334C7.15633 1.65778 6.82764 1.65778 6.49896 1.69334C6.36571 2.07556 6.1725 2.42667 5.91932 2.74667C5.66615 3.06667 5.35745 3.33112 4.99324 3.54001C4.62902 3.7489 4.24481 3.88445 3.84062 3.94667C3.43643 4.0089 3.0389 3.99556 2.64804 3.90667C2.4526 4.18223 2.28382 4.47112 2.14169 4.77334C2.41707 5.07556 2.62805 5.41778 2.77462 5.80001C2.9212 6.18223 2.99449 6.58223 2.99449 7.00001C2.99449 7.41778 2.9212 7.81778 2.77462 8.20001C2.62805 8.58223 2.41707 8.92445 2.14169 9.22667C2.21275 9.37778 2.29048 9.52445 2.37487 9.66667C2.45926 9.8089 2.55032 9.95112 2.64804 10.0933C3.0389 10.0045 3.43865 9.99112 3.84729 10.0533C4.25592 10.1156 4.6379 10.2533 4.99324 10.4667ZM6.99199 9.00001C6.62777 9.00001 6.29242 8.91112 5.98595 8.73334C5.67947 8.55556 5.4374 8.31334 5.25974 8.00667C5.08207 7.70001 4.99324 7.36445 4.99324 7.00001C4.99324 6.63556 5.08207 6.30001 5.25974 5.99334C5.4374 5.68667 5.67947 5.44445 5.98595 5.26667C6.29242 5.0889 6.62777 5.00001 6.99199 5.00001C7.3562 5.00001 7.69155 5.0889 7.99802 5.26667C8.3045 5.44445 8.54657 5.68667 8.72424 5.99334C8.9019 6.30001 8.99074 6.63556 8.99074 7.00001C8.99074 7.36445 8.9019 7.70001 8.72424 8.00667C8.54657 8.31334 8.3045 8.55556 7.99802 8.73334C7.69155 8.91112 7.3562 9.00001 6.99199 9.00001ZM6.99199 7.66667C7.17854 7.66667 7.33621 7.60223 7.46502 7.47334C7.59383 7.34445 7.65824 7.18667 7.65824 7.00001C7.65824 6.81334 7.59383 6.65556 7.46502 6.52667C7.33621 6.39778 7.17854 6.33334 6.99199 6.33334C6.80544 6.33334 6.64776 6.39778 6.51895 6.52667C6.39014 6.65556 6.32574 6.81334 6.32574 7.00001C6.32574 7.18667 6.39014 7.34445 6.51895 7.47334C6.64776 7.60223 6.80544 7.66667 6.99199 7.66667Z"
+                  fill="#2563EB"
+                />
+              </svg>
+              Engineering Specifications
+            </div>
+            <span class="routing-to to-engineering">To Engineering</span>
+          </div>
+
+          <div class="routing-item">
+            <div class="document-name">
+              <svg
+                width="10"
+                height="16"
+                viewBox="0 0 10 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4.99199 15.16C5.89809 15.1689 6.73757 14.9422 7.51042 14.48C8.2655 14.0444 8.86512 13.4489 9.30929 12.6933C9.76234 11.9111 9.98887 11.0666 9.98887 10.16C9.98887 9.70663 9.87782 9.15997 9.65574 8.51997C8.54533 9.6133 7.70141 10.1644 7.12399 10.1733C7.78136 9.01774 8.19888 7.99997 8.37654 7.11997C8.54533 6.25774 8.49203 5.46663 8.21664 4.74663C7.96791 4.07997 7.50153 3.41774 6.81752 2.75997C6.2401 2.19997 5.40951 1.55552 4.32574 0.826632C4.41458 1.74219 4.3213 2.58663 4.04592 3.35997C3.83272 3.9733 3.49515 4.55552 3.03322 5.10663C2.7756 5.41774 2.39362 5.79552 1.88727 6.23997L1.56747 6.51997C1.07 6.99108 0.688017 7.5333 0.421517 8.14663C0.13725 8.78663 -0.00488281 9.45774 -0.00488281 10.16C-0.00488281 11.0666 0.221642 11.9111 0.674692 12.6933C1.11886 13.4489 1.71848 14.0444 2.47357 14.48C3.24642 14.9333 4.08589 15.16 4.99199 15.16ZM5.45837 3.31997C6.1868 3.94219 6.67538 4.53552 6.92412 5.09997C7.17285 5.66441 7.21727 6.30219 7.05737 7.0133C6.90635 7.67108 6.54213 8.50219 5.96472 9.50663C5.80482 9.79108 5.75374 10.0911 5.81148 10.4066C5.86922 10.7222 6.02024 10.9844 6.26453 11.1933C6.50882 11.4022 6.79531 11.5066 7.12399 11.5066C7.56816 11.4977 8.03897 11.3644 8.53644 11.1066C8.40319 11.6222 8.16334 12.0889 7.81689 12.5066C7.47044 12.9244 7.05293 13.2489 6.56434 13.48C6.07576 13.7111 5.55164 13.8266 4.99199 13.8266C4.32574 13.8266 3.71279 13.6644 3.15314 13.34C2.59349 13.0155 2.14933 12.5711 1.82064 12.0066C1.49196 11.4422 1.32762 10.8266 1.32762 10.16C1.32762 9.6533 1.42755 9.16885 1.62743 8.70663C1.8273 8.24441 2.11379 7.83997 2.48689 7.4933L3.00657 7.02663C3.29972 6.76885 3.54845 6.52441 3.75277 6.2933C4.60557 5.38663 5.1741 4.39552 5.45837 3.31997Z"
+                  fill="#EF4444"
+                />
+              </svg>
+              Fire Access Plans
+            </div>
+            <span class="routing-to to-fire-dept">To Fire Dept</span>
+          </div>
+        </div>
+
+        <div class="content-section">
+          <h2 class="section-title">Review Guidelines Distribution</h2>
+          <p style="font-size: 14px; color: #4a5568; margin-bottom: 15px">
+            <strong>City Ordinance References:</strong>
+          </p>
+
+          <ul class="guidelines-list">
+            <li>Chapter 14 - Zoning Ordinance</li>
+            <li>Chapter 18 - Subdivision Regulations</li>
+            <li>Chapter 22 - Development Standards</li>
+            <li>Chapter 26 - Environmental Protection</li>
+          </ul>
+
+          <div class="special-sections">
+            <div class="special-instructions">
+              <h3>Special Instructions</h3>
+              <p>
+                Priority review requested. Applicant has requested expedited
+                processing due to financing timeline.
+              </p>
+            </div>
+
+            <div class="interdepartmental-notes">
+              <h3>Interdepartmental Notes</h3>
+              <p>
+                Coordinate with Engineering on drainage requirements. Fire Dept
+                to review access road specifications.
+              </p>
+            </div>
           </div>
         </div>
       </div>
 
       <div class="action-buttons">
-        <button class="btn btn-primary">Export Version Report</button>
-        <button class="btn btn-success">Approve Current Version</button>
-        <button class="btn btn-warning">Request New Version</button>
+        <button class="btn btn-primary">Send Reminder Notifications</button>
+        <button class="btn btn-success">Generate Status Report</button>
+        <button class="btn btn-warning">Schedule Coordination Meeting</button>
       </div>
     </main>
   </body>
