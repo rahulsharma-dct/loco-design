@@ -247,7 +247,9 @@
 
     <div class="main-content">
       <div class="interface-header">
-        <div class="interface-title">Permit #2024-156 - Document Review</div>
+        <div class="interface-title">
+          Issue Tracking & Resolution - Permit #2024-156
+        </div>
         <div class="phase-status">
           <div class="status-indicator"></div>
           Active Issues: 3 | Resolved: 7 | Average Resolution: 2.5 days
@@ -255,26 +257,277 @@
       </div>
       <!-- Metric Cards -->
       <div class="metric-cards">
-        <div class="metric-card blue">
-          <div class="metric-number blue">45</div>
-          <div class="metric-title">Active Permits</div>
-          <div class="metric-subtitle">All permit types in progress</div>
+        <div class="metric-card red">
+          <div class="metric-number red">1</div>
+          <div class="metric-title">Critical Issues</div>
+          <div class="metric-subtitle">Requires immediate attention</div>
         </div>
         <div class="metric-card orange">
-          <div class="metric-number orange">28</div>
-          <div class="metric-title">Code Enforcement</div>
-          <div class="metric-subtitle">Construction projects monitored</div>
-        </div>
-        <div class="metric-card gray">
-          <div class="metric-number gray">24</div>
-          <div class="metric-title">Planning & Zoning</div>
-          <div class="metric-subtitle">Applications under review</div>
+          <div class="metric-number orange">2</div>
+          <div class="metric-title">Standard Issues</div>
+          <div class="metric-subtitle">Normal priority items</div>
         </div>
         <div class="metric-card green">
-          <div class="metric-number green">12,456</div>
-          <div class="metric-title">GIS Integration</div>
-          <div class="metric-subtitle">Parcels mapped and tracked</div>
+          <div class="metric-number green">4</div>
+          <div class="metric-title">Auto-Resolved</div>
+          <div class="metric-subtitle">System auto-fixed issues</div>
         </div>
+        <div class="metric-card blue">
+          <div class="metric-number blue">1</div>
+          <div class="metric-title">Pending Response</div>
+          <div class="metric-subtitle">Waiting for applicant</div>
+        </div>
+      </div>
+
+      <!--active issue list with critical issue-->
+      <div class="container">
+        <!-- Left Column -->
+        <div class="left-column">
+          <div class="section-title">Active Issues List</div>
+          <div class="section--title---container">
+            <div class="issue-card">
+              <div class="issue-header">
+                ISSUE-001 - Critical
+                <span class="badge-critical">Critical</span>
+              </div>
+              <div class="issue-title">
+                Site Plan: Missing drainage calculations
+              </div>
+              <div class="issue-meta">
+                Assigned: Engineering Dept<br />Due: Aug 3, 2025
+              </div>
+            </div>
+
+            <div class="issue-card">
+              <div class="issue-header">
+                ISSUE-002 - Standard
+                <span class="badge-standard">Standard</span>
+              </div>
+              <div class="issue-title">
+                Environmental Study: Table formatting issue
+              </div>
+              <div class="issue-meta">
+                Assigned: Environmental Dept<br />Due: Aug 8, 2025
+              </div>
+            </div>
+
+            <div class="issue-card">
+              <div class="issue-header">
+                ISSUE-003 - Standard
+                <span class="badge-standard">Standard</span>
+              </div>
+              <div class="issue-title">
+                Concept Plan: Scale notation unclear
+              </div>
+              <div class="issue-meta">
+                Assigned: Planning Dept<br />Due: Aug 6, 2025
+              </div>
+            </div>
+          </div>
+
+          <div class="button-row">
+            <button class="btn btn-blue">Create New Issue</button>
+            <button class="btn btn-green">Bulk Assign Issues</button>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="right-column">
+          <div class="critical-box">
+            <div class="critical-title">
+              Critical Issue <br />
+              <p class="critical-meta">
+                <strong>Title:</strong> Missing drainage calculations<br />
+              </p>
+            </div>
+            <div class="critical-meta">
+              Document: Site Development Plan v1.2<br />
+              Location: Sheet 3, Section 8<br />
+              Created: Aug 1, 2025 by System Validation<br />
+              Priority: Critical (blocks project approval)
+            </div>
+          </div>
+
+          <div class="section">
+            <h3 class="section__title__styling">Issue Description</h3>
+            <div class="description">
+              Automated validation detected missing stormwater drainage
+              calculations required per City Code Section 18.4.2. Calculations
+              must show compliance with 10-year storm management requirements.
+            </div>
+          </div>
+
+          <div class="section">
+            <h3 class="section__title__styling">Suggested Resolution</h3>
+            <div class="ai-box">
+              <strong class="ai--recommendation">AI Recommendation:</strong>
+              <a href="#">• Contact applicant for drainage calculations</a>
+              <a href="#">• Provide standard calculation template</a>
+              <a href="#">• Schedule engineering consultation if needed</a>
+              <button class="btn btn-green">Apply Recommendation</button>
+            </div>
+          </div>
+
+          <div class="section">
+            <h3>Resolution Actions</h3>
+            <div class="resolution-actions">
+              <div class="action-btn blue set--icon">
+                <svg
+                  width="16"
+                  height="14"
+                  viewBox="0 0 16 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.75207 1.75H13.2483C13.4116 1.75 13.5496 1.80639 13.6623 1.91917C13.7751 2.03194 13.8314 2.17 13.8314 2.33333V11.6667C13.8314 11.83 13.7751 11.9681 13.6623 12.0808C13.5496 12.1936 13.4116 12.25 13.2483 12.25H2.75207C2.5888 12.25 2.45079 12.1936 2.33805 12.0808C2.22531 11.9681 2.16895 11.83 2.16895 11.6667V2.33333C2.16895 2.17 2.22531 2.03194 2.33805 1.91917C2.45079 1.80639 2.5888 1.75 2.75207 1.75ZM12.6652 4.22333L8.04685 8.365L3.3352 4.21167V11.0833H12.6652V4.22333ZM3.63842 2.91667L8.03518 6.80167L12.3736 2.91667H3.63842Z"
+                    fill="white"
+                  />
+                </svg>
+                <span>Email Applicant</span>
+              </div>
+              <div class="action-btn blue set--icon">
+                <svg
+                  width="11"
+                  height="12"
+                  viewBox="0 0 11 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.8107 3.66665V11.25C10.8107 11.4133 10.7543 11.5514 10.6416 11.6641C10.5289 11.7769 10.3909 11.8333 10.2276 11.8333H0.897578C0.734303 11.8333 0.596297 11.7769 0.483559 11.6641C0.370822 11.5514 0.314453 11.4133 0.314453 11.25V0.74998C0.314453 0.586646 0.370822 0.44859 0.483559 0.335813C0.596297 0.223035 0.734303 0.166646 0.897578 0.166646H7.31195L10.8107 3.66665ZM9.64445 4.24998H6.72883V1.33331H1.4807V10.6666H9.64445V4.24998ZM3.23008 3.08331H4.97945V4.24998H3.23008V3.08331ZM3.23008 5.41665H7.89508V6.58331H3.23008V5.41665ZM3.23008 7.74998H7.89508V8.91665H3.23008V7.74998Z"
+                    fill="white"
+                  />
+                </svg>
+                <span>Send Template</span>
+              </div>
+              <div class="action-btn blue set--icon">
+                <svg
+                  width="10"
+                  height="14"
+                  viewBox="0 0 10 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.413086 13.125C0.413086 12.2772 0.626898 11.4917 1.05452 10.7683C1.4666 10.0683 2.02251 9.51222 2.72226 9.1C3.44534 8.67222 4.23061 8.45833 5.07809 8.45833C5.92556 8.45833 6.71084 8.67222 7.43391 9.1C8.13366 9.51222 8.68957 10.0683 9.10165 10.7683C9.52927 11.4917 9.74309 12.2772 9.74309 13.125H8.57684C8.57684 12.495 8.41745 11.9078 8.09867 11.3633C7.78767 10.8344 7.36782 10.4144 6.83912 10.1033C6.29487 9.78444 5.70786 9.625 5.07809 9.625C4.44831 9.625 3.8613 9.78444 3.31705 10.1033C2.78835 10.4144 2.3685 10.8344 2.0575 11.3633C1.73872 11.9078 1.57934 12.495 1.57934 13.125H0.413086ZM5.07809 7.875C4.44054 7.875 3.85352 7.71556 3.31705 7.39667C2.78835 7.08556 2.3685 6.66556 2.0575 6.13667C1.73872 5.6 1.57934 5.01278 1.57934 4.375C1.57934 3.73722 1.73872 3.15 2.0575 2.61333C2.3685 2.08444 2.78835 1.66444 3.31705 1.35333C3.85352 1.03444 4.44054 0.875 5.07809 0.875C5.71564 0.875 6.30265 1.03444 6.83912 1.35333C7.36782 1.66444 7.78767 2.08444 8.09867 2.61333C8.41745 3.15 8.57684 3.73722 8.57684 4.375C8.57684 5.01278 8.41745 5.6 8.09867 6.13667C7.78767 6.66556 7.36782 7.08556 6.83912 7.39667C6.30265 7.71556 5.71564 7.875 5.07809 7.875ZM5.07809 6.70833C5.49794 6.70833 5.88669 6.60333 6.24434 6.39333C6.60199 6.18333 6.88577 5.89944 7.0957 5.54167C7.30562 5.18389 7.41059 4.795 7.41059 4.375C7.41059 3.955 7.30562 3.56611 7.0957 3.20833C6.88577 2.85056 6.60199 2.56667 6.24434 2.35667C5.88669 2.14667 5.49794 2.04167 5.07809 2.04167C4.65824 2.04167 4.26949 2.14667 3.91184 2.35667C3.55419 2.56667 3.2704 2.85056 3.06047 3.20833C2.85055 3.56611 2.74559 3.955 2.74559 4.375C2.74559 4.795 2.85055 5.18389 3.06047 5.54167C3.2704 5.89944 3.55419 6.18333 3.91184 6.39333C4.26949 6.60333 4.65824 6.70833 5.07809 6.70833Z"
+                    fill="white"
+                  />
+                </svg>
+                <span>Assign Expert</span>
+              </div>
+              <div class="action-btn orange set--icon">
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.01582 11.8333C5.22277 11.8333 4.46471 11.6816 3.74163 11.3783C3.04966 11.0828 2.43349 10.6647 1.89313 10.1241C1.35276 9.58359 0.934858 8.9672 0.639408 8.27498C0.336183 7.55165 0.18457 6.79331 0.18457 5.99998C0.18457 5.20665 0.336183 4.44831 0.639408 3.72498C0.934858 3.03276 1.35276 2.41637 1.89313 1.87581C2.43349 1.33526 3.04966 0.917202 3.74163 0.621646C4.46471 0.318313 5.22277 0.166646 6.01582 0.166646C6.80887 0.166646 7.56693 0.318313 8.29001 0.621646C8.98198 0.917202 9.59815 1.33526 10.1385 1.87581C10.6789 2.41637 11.0968 3.03276 11.3922 3.72498C11.6955 4.44831 11.8471 5.20665 11.8471 5.99998C11.8471 6.79331 11.6955 7.55165 11.3922 8.27498C11.0968 8.9672 10.6789 9.58359 10.1385 10.1241C9.59815 10.6647 8.98198 11.0828 8.29001 11.3783C7.56693 11.6816 6.80887 11.8333 6.01582 11.8333ZM6.01582 10.6666C6.8633 10.6666 7.64857 10.4528 8.37164 10.025C9.07139 9.61276 9.62731 9.05665 10.0394 8.35665C10.467 7.63331 10.6808 6.84776 10.6808 5.99998C10.6808 5.1522 10.467 4.36665 10.0394 3.64331C9.62731 2.94331 9.07139 2.3872 8.37164 1.97498C7.64857 1.5472 6.8633 1.33331 6.01582 1.33331C5.16835 1.33331 4.38307 1.5472 3.66 1.97498C2.96025 2.3872 2.40433 2.94331 1.99226 3.64331C1.56463 4.36665 1.35082 5.1522 1.35082 5.99998C1.35082 6.84776 1.56463 7.63331 1.99226 8.35665C2.40433 9.05665 2.96025 9.61276 3.66 10.025C4.38307 10.4528 5.16835 10.6666 6.01582 10.6666ZM6.59895 5.99998H8.93145V7.16665H5.4327V3.08331H6.59895V5.99998Z"
+                    fill="white"
+                  />
+                </svg>
+                <span>Extend Deadline</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Buttons-->
+      <div class="status-container">
+        <div class="status green">Issue Detected</div>
+        <div class="status green">Auto-Categorized</div>
+        <div class="status blue">Department Assigned</div>
+        <div class="status gray">Resolution in Progress</div>
+        <div class="status gray">Verification & Closure</div>
+      </div>
+
+      <!--Thread-->
+      <div class="issue-dashboard-container">
+        <!-- Communication Thread -->
+        <div class="issue-card--container">
+          <div class="comm-thread-title">Communication Thread</div>
+
+          <div class="comm-thread--items">
+            <div class="comm-thread-item comm-system">
+              <div class="comm-date">System - Aug 1, 2025 2:45 PM</div>
+              <div class="comm-text">
+                Issue automatically created during validation scan.
+              </div>
+            </div>
+
+            <div class="comm-thread-item comm-user">
+              <div class="comm-date">
+                Mike Chen (Engineering) - Aug 1, 2025 3:00 PM
+              </div>
+              <div class="comm-text">
+                Reviewing drainage requirements. Will contact applicant today.
+              </div>
+            </div>
+
+            <div class="comm-thread-item comm-orange">
+              <div class="comm-date">System - Aug 1, 2025 3:05 PM</div>
+              <div class="comm-text">
+                Email template sent to applicant with calculation requirements.
+              </div>
+            </div>
+          </div>
+
+          <div class="comm-input">
+            <textarea
+              rows="3"
+              placeholder="Add comment to issue thread..."
+            ></textarea>
+          </div>
+          <button class="comm-button">Add Comment</button>
+        </div>
+
+        <!-- Resolution Analytics -->
+        <div class="issue-card--container">
+          <div class="res-analytics-title">Resolution Analytics</div>
+
+          <div class="res-metrics">
+            <div class="res-metric">
+              <div class="res-metric-value res-days">2.5 days</div>
+              <div class="res-metric-label">
+                Avg Resolution Time<br /><span class="res--metric--label">
+                  Similar issues
+                </span>
+              </div>
+            </div>
+            <div class="res-metric">
+              <div class="res-metric-value res-percent">65%</div>
+              <div class="res-metric-label">
+                Auto-Resolution Rate<br /><span class="res--metric--label"
+                  >This issue type</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="res-dropdown">
+            <label for="issueEscalation">Issue Escalation</label>
+            <select id="issueEscalation">
+              <option>No escalation needed</option>
+              <option>Escalate to Level 2</option>
+              <option>Escalate to Management</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="btn---container">
+        <button class="btn---marker btn-mark-resolved">Mark as Resolved</button>
+        <button class="btn---marker btn-escalate">Escalate Issue</button>
+        <button class="btn---marker btn-generate-report">
+          Generate Issue Report
+        </button>
+        <button class="btn---marker btn-close-archive">
+          Close &amp; Archive
+        </button>
       </div>
     </div>
   </body>
