@@ -246,22 +246,22 @@
       <!-- Metric Cards -->
       <div class="metrics-grid">
         <div class="metric-card blue">
-          <div class="metric-number">18</div>
+          <div class="metric-number blue">18</div>
           <div class="metric-label">Building Permits</div>
           <div class="metric-sublabel">Active construction permits</div>
         </div>
         <div class="metric-card orange">
-          <div class="metric-number">18</div>
+          <div class="metric-number orange">18</div>
           <div class="metric-label">Trade Permits</div>
           <div class="metric-sublabel">Electrical, Plumbing, Electrical</div>
         </div>
         <div class="metric-card green">
-          <div class="metric-number">12</div>
+          <div class="metric-number green">12</div>
           <div class="metric-label">Inspections Today</div>
           <div class="metric-sublabel">Scheduled for inspection</div>
         </div>
-        <div class="metric-card purple">
-          <div class="metric-number">85%</div>
+        <div class="metric-card blue">
+          <div class="metric-number blue">85%</div>
           <div class="metric-label">Avg Completion</div>
           <div class="metric-sublabel">Projects on schedule</div>
         </div>
@@ -285,168 +285,251 @@
         <div class="content-section">
           <h2 class="section-title">Construction Permit Tracking</h2>
 
-          <div class="permit-category">
-            <div class="permit-header" onclick="togglePermitCategory(this)">
-              <span>📋 Building Permits</span>
-              <span>▼</span>
-            </div>
-            <div class="permit-content expanded">
-              <div class="permit-item">
-                <div class="permit-details">
-                  <div class="permit-id">
-                    BP-2024-1156 - Residential Construction
-                  </div>
-                  <div class="permit-description">
-                    1234 Main St - Foundation inspection passed
-                  </div>
-                  <div class="permit-date">Scheduled: Aug 15, 2025</div>
-                </div>
-                <span class="permit-status-badge status-in-progress"
-                  >In Progress</span
+          <div class="construction">
+            <div class="permit-category">
+              <div class="permit-header">
+                <span
+                  ><svg
+                    width="15"
+                    height="12"
+                    viewBox="0 0 15 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.325 10.6667H14.6575V12H0V10.6667H1.3325V0.666666C1.3325 0.48 1.3969 0.322222 1.52571 0.193333C1.65452 0.0644445 1.8122 0 1.99875 0H8.66125C8.8478 0 9.00548 0.0644445 9.13429 0.193333C9.2631 0.322222 9.3275 0.48 9.3275 0.666666V10.6667H11.9925V5.33333H10.66V4H12.6588C12.8453 4 13.003 4.06444 13.1318 4.19333C13.2606 4.32222 13.325 4.48 13.325 4.66667V10.6667ZM2.665 1.33333V10.6667H7.995V1.33333H2.665ZM3.9975 5.33333H6.6625V6.66667H3.9975V5.33333ZM3.9975 2.66667H6.6625V4H3.9975V2.66667Z"
+                      fill="#3B82F6"
+                    />
+                  </svg>
+                  Building Permits</span
                 >
               </div>
-              <div class="permit-item">
-                <div class="permit-details">
-                  <div class="permit-id">
-                    BP-2024-1157 - Commercial Building
+              <div class="permit-content">
+                <div class="permit-item">
+                  <div class="permit-details">
+                    <div class="permit-id">
+                      BP-2024-1156 - Residential Construction
+                    </div>
+                    <div class="permit-description">
+                      1234 Main St - Foundation inspection passed
+                    </div>
+                    <div class="permit-date">Scheduled: Aug 15, 2025</div>
                   </div>
-                  <div class="permit-description">
-                    567 Highway 71 - Steel frame inspection
-                  </div>
-                  <div class="permit-date">Scheduled: Aug 16, 2025</div>
+                  <span class="permit-status-badge status-in-progress"
+                    >In Progress</span
+                  >
                 </div>
-                <span class="permit-status-badge status-inspection-due"
-                  >Inspection Due</span
-                >
+                <div class="permit-item">
+                  <div class="permit-details">
+                    <div class="permit-id">
+                      BP-2024-1157 - Commercial Building
+                    </div>
+                    <div class="permit-description">
+                      567 Highway 71 - Steel frame inspection
+                    </div>
+                    <div class="permit-date">Scheduled: Aug 16, 2025</div>
+                  </div>
+                  <span class="permit-status-badge status-inspection-due"
+                    >Inspection Due</span
+                  >
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="permit-category">
-            <div class="permit-header" onclick="togglePermitCategory(this)">
-              <span>🔧 Mechanical HVAC Permits</span>
-              <span>▼</span>
-            </div>
-            <div class="permit-content">
-              <div class="permit-item">
-                <div class="permit-details">
-                  <div class="permit-id">MP-2024-445 - Residential HVAC</div>
-                  <div class="permit-description">
-                    Connected to BP-2024-1156
-                  </div>
-                  <div class="permit-date">Rough-in inspection pending</div>
-                </div>
-                <span class="permit-status-badge status-pending">Pending</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="permit-category">
-            <div class="permit-header" onclick="togglePermitCategory(this)">
-              <span>🚿 Plumbing Permits</span>
-              <span>▼</span>
-            </div>
-            <div class="permit-content">
-              <div class="permit-item">
-                <div class="permit-details">
-                  <div class="permit-id">
-                    PP-2024-667 - Residential Plumbing
-                  </div>
-                  <div class="permit-description">
-                    Connected to BP-2024-1156
-                  </div>
-                  <div class="permit-date">
-                    Rough-in approved, final pending
-                  </div>
-                </div>
-                <span class="permit-status-badge status-ready-to-issue"
-                  >Ready to Complete</span
+            <div class="permit-category">
+              <div class="permit-header">
+                <span
+                  ><svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 10 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.32687 3.33331C2.32687 2.85331 2.4468 2.40887 2.68665 1.99998C2.9265 1.59109 3.25074 1.26665 3.65937 1.02665C4.06801 0.786646 4.51218 0.666646 4.99188 0.666646C5.47158 0.666646 5.91574 0.786646 6.32438 1.02665C6.73301 1.26665 7.05725 1.59109 7.2971 1.99998C7.53695 2.40887 7.65688 2.85331 7.65688 3.33331V6.83998C8.26982 7.26665 8.75397 7.80887 9.1093 8.46665C9.47352 9.15109 9.65563 9.88442 9.65563 10.6666C9.65563 11.5111 9.44242 12.2978 9.01603 13.0266C8.60739 13.7289 8.05218 14.2844 7.3504 14.6933C6.62197 15.12 5.83579 15.3333 4.99188 15.3333C4.14796 15.3333 3.36178 15.12 2.63335 14.6933C1.93157 14.2844 1.37636 13.7289 0.967725 13.0266C0.541325 12.2978 0.328125 11.5111 0.328125 10.6666C0.328125 9.88442 0.510233 9.15109 0.87445 8.46665C1.22978 7.80887 1.71393 7.26665 2.32687 6.83998V3.33331ZM3.0864 7.93331C2.64223 8.24442 2.29356 8.63998 2.04039 9.11998C1.78721 9.59998 1.66062 10.1155 1.66062 10.6666C1.66062 11.2711 1.80942 11.8289 2.10701 12.34C2.4046 12.8511 2.8088 13.2555 3.31959 13.5533C3.83038 13.8511 4.38781 14 4.99188 14C5.59594 14 6.15337 13.8511 6.66416 13.5533C7.17495 13.2555 7.57915 12.8511 7.87674 12.34C8.17433 11.8289 8.32312 11.2711 8.32312 10.6666C8.32312 10.1155 8.19654 9.59998 7.94336 9.11998C7.69019 8.63998 7.34152 8.24442 6.89735 7.93331L6.32438 7.53331V3.33331C6.32438 3.09331 6.26441 2.87109 6.14449 2.66665C6.02456 2.4622 5.86244 2.29998 5.65812 2.17998C5.45381 2.05998 5.23173 1.99998 4.99188 1.99998C4.75203 1.99998 4.52994 2.05998 4.32562 2.17998C4.12131 2.29998 3.95919 2.4622 3.83926 2.66665C3.71934 2.87109 3.65937 3.09331 3.65937 3.33331V7.53331L3.0864 7.93331ZM2.32687 10.6666H7.65688C7.65688 11.1466 7.53695 11.5911 7.2971 12C7.05725 12.4089 6.73301 12.7333 6.32438 12.9733C5.91574 13.2133 5.47158 13.3333 4.99188 13.3333C4.51218 13.3333 4.06801 13.2133 3.65937 12.9733C3.25074 12.7333 2.9265 12.4089 2.68665 12C2.4468 11.5911 2.32687 11.1466 2.32687 10.6666Z"
+                      fill="#3B82F6"
+                    />
+                  </svg>
+                  Mechanical HVAC Permits</span
                 >
               </div>
-            </div>
-          </div>
-
-          <div class="permit-category">
-            <div class="permit-header" onclick="togglePermitCategory(this)">
-              <span>🏠 Roofing Permits</span>
-              <span>▼</span>
-            </div>
-            <div class="permit-content">
-              <div class="permit-item">
-                <div class="permit-details">
-                  <div class="permit-id">RP-2024-223 - Residential Roof</div>
-                  <div class="permit-description">
-                    Materials approved, installation pending
+              <div class="permit-content">
+                <div class="permit-item">
+                  <div class="permit-details">
+                    <div class="permit-id">MP-2024-445 - Residential HVAC</div>
+                    <div class="permit-description">
+                      Connected to BP-2024-1156
+                    </div>
+                    <div class="permit-date">Rough-in inspection pending</div>
                   </div>
+                  <span class="permit-status-badge status-pending"
+                    >Pending</span
+                  >
                 </div>
-                <span class="permit-status-badge status-ready-to-issue"
-                  >Ready to Issue</span
+              </div>
+            </div>
+
+            <div class="permit-category">
+              <div class="permit-header">
+                <span
+                  ><svg
+                    width="12"
+                    height="16"
+                    viewBox="0 0 12 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.99234 2.63998L2.70107 5.94664C2.097 6.5422 1.68837 7.24442 1.47517 8.05331C1.27085 8.84442 1.27085 9.63553 1.47517 10.4266C1.68837 11.2355 2.09478 11.94 2.69441 12.54C3.29403 13.14 3.99804 13.5466 4.80642 13.76C5.59704 13.9644 6.38765 13.9644 7.17827 13.76C7.98665 13.5466 8.69066 13.14 9.29028 12.54C9.88991 11.94 10.2963 11.2355 10.5095 10.4266C10.7138 9.63553 10.7138 8.84442 10.5095 8.05331C10.2963 7.24442 9.88769 6.5422 9.28362 5.94664L5.99234 2.63998ZM5.99234 0.759976L10.2297 4.99998C11.0025 5.76442 11.5222 6.67109 11.7887 7.71998C12.0552 8.73331 12.0552 9.74664 11.7887 10.76C11.5222 11.8089 11.0048 12.7178 10.2364 13.4866C9.46795 14.2555 8.55963 14.7778 7.51139 15.0533C6.49869 15.3111 5.48599 15.3111 4.47329 15.0533C3.42506 14.7778 2.51674 14.2555 1.74833 13.4866C0.979923 12.7178 0.462469 11.8089 0.195969 10.76C-0.0705312 9.74664 -0.0705312 8.73331 0.195969 7.71998C0.462469 6.67109 0.982144 5.76442 1.75499 4.99998L5.99234 0.759976Z"
+                      fill="#3B82F6"
+                    />
+                  </svg>
+                  Plumbing Permits</span
                 >
+              </div>
+              <div class="permit-content">
+                <div class="permit-item">
+                  <div class="permit-details">
+                    <div class="permit-id">
+                      PP-2024-667 - Residential Plumbing
+                    </div>
+                    <div class="permit-description">
+                      Connected to BP-2024-1156
+                    </div>
+                    <div class="permit-date">
+                      Rough-in approved, final pending
+                    </div>
+                  </div>
+                  <span class="permit-status-badge status-ready-to-issue"
+                    >Ready to Complete</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="permit-category">
+              <div class="permit-header">
+                <span
+                  ><svg
+                    width="12"
+                    height="13"
+                    viewBox="0 0 12 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.9925 11.8133C11.9925 12 11.9281 12.1578 11.7993 12.2866C11.6705 12.4155 11.5128 12.48 11.3263 12.48H0.66625C0.4797 12.48 0.322021 12.4155 0.193213 12.2866C0.0644042 12.1578 0 12 0 11.8133V4.81331C0 4.59109 0.0843917 4.41331 0.253175 4.27998L5.58318 0.133314C5.70754 0.044425 5.84523 -1.90735e-05 5.99625 -1.90735e-05C6.14727 -1.90735e-05 6.28496 0.044425 6.40933 0.133314L11.7393 4.27998C11.9081 4.41331 11.9925 4.59109 11.9925 4.81331V11.8133ZM10.66 11.1466V5.13331L5.99625 1.50665L1.3325 5.13331V11.1466H10.66Z"
+                      fill="#F97316"
+                    />
+                  </svg>
+                  Roofing Permits</span
+                >
+              </div>
+              <div class="permit-content">
+                <div class="permit-item">
+                  <div class="permit-details">
+                    <div class="permit-id">RP-2024-223 - Residential Roof</div>
+                    <div class="permit-description">
+                      Materials approved, installation pending
+                    </div>
+                  </div>
+                  <span class="permit-status-badge status-inspection-due"
+                    >Ready to Issue</span
+                  >
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Inspection Schedule & Status -->
-        <div class="content-section">
-          <h2 class="section-title">Inspection Schedule & Status</h2>
+        <!-- Right Sections -->
+        <div class="right-sections">
+          <!-- Inspection Schedule & Status -->
+          <div class="content-section">
+            <h2 class="section-title">Inspection Schedule & Status</h2>
 
-          <h3 class="add-update-title">Today's Inspections - August 7, 2025</h3>
+            <div class="inspection">
+              <h3 class="add-update-title">
+                Today's Inspections - August 7, 2025
+              </h3>
 
-          <div class="inspection-item">
-            <div>
-              <div class="inspection-time">9:00 AM - BP-2024-1156</div>
-              <div class="inspection-details">
-                Framing inspection - 1234 Main St<br />Inspector: Mike Rodriguez
+              <div class="inspection-item">
+                <div>
+                  <div class="inspection-time">9:00 AM - BP-2024-1156</div>
+                  <div class="inspection-details">
+                    Framing inspection - 1234 Main St<br />Inspector: Mike
+                    Rodriguez
+                  </div>
+                </div>
+                <div class="inspection-actions">
+                  <button class="btn-small btn-start">Start Inspection</button>
+                </div>
               </div>
-            </div>
-            <div class="inspection-actions">
-              <button class="btn-small btn-start">Start Inspection</button>
-            </div>
-          </div>
 
-          <div class="inspection-item">
-            <div>
-              <div class="inspection-time">11:00 AM - MP-2024-445</div>
-              <div class="inspection-details">
-                HVAC rough-in - 1234 Main St<br />Inspector: Sarah Johnson
+              <div class="inspection-item">
+                <div>
+                  <div class="inspection-time">11:00 AM - MP-2024-445</div>
+                  <div class="inspection-details">
+                    HVAC rough-in - 1234 Main St<br />Inspector: Sarah Johnson
+                  </div>
+                </div>
+                <div class="inspection-actions">
+                  <button class="btn-small btn-reschedule">Reschedule</button>
+                </div>
               </div>
-            </div>
-            <div class="inspection-actions">
-              <button class="btn-small btn-reschedule">Reschedule</button>
-            </div>
-          </div>
 
-          <div class="inspection-item">
-            <div>
-              <div class="inspection-time">2:00 PM - BP-2024-1157</div>
-              <div class="inspection-details">
-                Steel frame inspection - 567 Highway 71<br />Inspector: Tom
-                Wilson
+              <div class="inspection-item">
+                <div>
+                  <div class="inspection-time">2:00 PM - BP-2024-1157</div>
+                  <div class="inspection-details">
+                    Steel frame inspection - 567 Highway 71<br />Inspector: Tom
+                    Wilson
+                  </div>
+                </div>
+                <div class="inspection-actions">
+                  <button class="btn-small btn-reschedule">Reschedule</button>
+                </div>
               </div>
-            </div>
-            <div class="inspection-actions">
-              <button class="btn-small btn-reschedule">Reschedule</button>
             </div>
           </div>
 
           <!-- Violation Tracking -->
-          <div class="special-sections">
+          <div class="content-section-small">
+            <h2 class="section-title-1">Violation Tracking</h2>
             <div class="special-instructions">
-              <h3 class="add-update-title">Violation Tracking</h3>
-              <div class="violation-item">Work without permit - 789 Oak St</div>
-              <div class="violation-item">Setback violation - 456 Pine Ave</div>
+              <div class="violation-alert">
+                <svg
+                  width="15"
+                  height="13"
+                  viewBox="0 0 15 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.58192 0.339356L13.938 11.3394C14.0268 11.4905 14.0468 11.6549 13.9979 11.8327C13.9491 12.0105 13.8447 12.1482 13.6848 12.246C13.5871 12.3082 13.476 12.3394 13.3517 12.3394H0.66625C0.4797 12.3394 0.322021 12.2727 0.193213 12.1394C0.0644042 12.006 0 11.8505 0 11.6727C0 11.5482 0.02665 11.4371 0.07995 11.3394L6.43598 0.339356C6.52481 0.179356 6.65806 0.0749111 6.83573 0.0260229C7.01339 -0.0228662 7.18218 -0.00286579 7.34207 0.0860224C7.44868 0.148245 7.52863 0.232689 7.58192 0.339356ZM1.8122 11.006H12.2057L7.00895 2.00602L1.8122 11.006ZM6.3427 9.00602H7.6752V10.3394H6.3427V9.00602ZM6.3427 4.33936H7.6752V7.67269H6.3427V4.33936Z"
+                    fill="#EF4444"
+                  />
+                </svg>
+                Active Violations: 3
+              </div>
               <div class="violation-item">
-                Unauthorized addition - 321 Elm Dr
+                • Work without permit - 789 Oak St
+              </div>
+              <div class="violation-item">
+                • Setback violation - 456 Pine Ave
+              </div>
+              <div class="violation-item">
+                • Unauthorized addition - 321 Elm Dr
               </div>
               <button class="manage-violations-btn">Manage Violations</button>
             </div>
           </div>
 
           <!-- Inspection Results Entry -->
-          <div class="special-sections">
-            <div class="special-instructions">
-              <h3 class="add-update-title">Inspection Results Entry</h3>
+          <div class="content-section-small">
+            <h2 class="section-title-1">Inspection Results Entry</h2>
+            <div class="">
               <select class="inspection-dropdown">
                 <option>Select permit for inspection...</option>
                 <option>BP-2024-1156 - Framing Inspection</option>
@@ -454,7 +537,7 @@
                 <option>PP-2024-667 - Plumbing Final</option>
               </select>
 
-              <div class="section-title">Inspection Status</div>
+              <div class="section-title-1">Inspection Status</div>
               <div class="status-buttons-inline">
                 <button class="status-btn-small btn-pass">Pass</button>
                 <button class="status-btn-small btn-pass-conditions">
