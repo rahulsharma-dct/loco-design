@@ -13,142 +13,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
     />
     <link rel="stylesheet" href="./Login.css" />
-    <!-- <style>
-      /* Reset and base */
-      * {
-        box-sizing: border-box;
-      }
-      body,
-      html {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        font-family: "Inter", sans-serif;
-        background-color: #f9fafb;
-      }
-      .container {
-        display: flex;
-        height: 100vh;
-        width: 100vw;
-      }
-      .left-side {
-        flex: 1;
-        background: url("https://readdy.ai/api/search-image?query=modern%20office%20building%20interior%20with%20glass%20walls%20and%20natural%20light%2C%20minimalist%20architecture%2C%20professional%20workspace%20environment%2C%20clean%20design%2C%20high-end%20corporate%20setting%2C%20bright%20and%20airy%20atmosphere&width=1024&height=1024&seq=1&orientation=squarish")
-          no-repeat center center/cover;
-      }
-      .right-side {
-        flex: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: white;
-      }
-      .login-card {
-        background: white;
-        border-radius: 16px;
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-        padding: 48px 40px;
-        width: 100%;
-        max-width: 400px;
-      }
-      .login-card h2 {
-        font-weight: 600;
-        font-size: 14px;
-        color: #4b5563; /* gray-700 */
-        margin: 0 0 8px 0;
-      }
-      .login-card h1 {
-        font-weight: 700;
-        font-size: 28px;
-        margin: 0 0 8px 0;
-        color: #111827; /* gray-900 */
-      }
-      .login-card p.subtitle {
-        font-weight: 400;
-        font-size: 14px;
-        color: #6b7280; /* gray-500 */
-        margin: 0 0 32px 0;
-      }
-      label {
-        font-weight: 600;
-        font-size: 14px;
-        color: #374151; /* gray-700 */
-        display: block;
-        margin-bottom: 6px;
-      }
-      .input-wrapper {
-        position: relative;
-      }
-      .input-wrapper input {
-        width: 100%;
-        padding: 12px 44px 12px 40px;
-        border-radius: 8px;
-        border: 1.5px solid #d1d5db; /* gray-300 */
-        font-size: 14px;
-        color: #111827;
-        transition: border-color 0.3s ease;
-      }
-      .input-wrapper input:focus {
-        outline: none;
-        border-color: #3b82f6; /* blue-500 */
-        box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
-      }
-      .input-wrapper .icon-left {
-        position: absolute;
-        left: 12px;
-        top: 50%;
-        transform: translateY(-50%);
-        color: #9ca3af; /* gray-400 */
-        font-size: 18px;
-        pointer-events: none;
-      }
-      .input-wrapper button.toggle-password {
-        position: absolute;
-        right: 12px;
-        top: 50%;
-        transform: translateY(-50%);
-        background: none;
-        border: none;
-        cursor: pointer;
-        color: #9ca3af;
-        font-size: 18px;
-        padding: 0;
-        display: flex;
-        align-items: center;
-      }
-      .input-wrapper button.toggle-password:hover {
-        color: #6b7280; /* gray-500 */
-      }
-      .btn-submit {
-        width: 100%;
-        margin-top: 32px;
-        padding: 14px;
-        background-color: #3b82f6; /* blue-500 */
-        border: none;
-        border-radius: 8px;
-        color: white;
-        font-weight: 700;
-        font-size: 16px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-      }
-      .btn-submit:hover {
-        background-color: #2563eb; /* blue-600 */
-      }
-      .footer-text {
-        margin-top: 36px;
-        font-size: 12px;
-        color: #9ca3af; /* gray-400 */
-        text-align: center;
-      }
-      /* Error message */
-      .error-message {
-        color: #b91c1c; /* red-700 */
-        font-size: 12px;
-        margin-top: 6px;
-        min-height: 16px;
-      }
-    </style> -->
   </head>
   <body>
     <div class="container">
@@ -273,11 +137,10 @@
             userIdInput.value === "test" &&
             passwordInput.value === "test123@"
           ) {
-            alert("Login successful! Redirecting...");
-            // redirect or whatever you want here
-            window.location.href = "dashboard.html";
+            window.location.href = "planning-zoning.html";
           } else {
-            alert("Invalid credentials. Please try again.");
+            passwordErr.textContent = "Invalid Credentials";
+            valid = false;
           }
         });
       });
