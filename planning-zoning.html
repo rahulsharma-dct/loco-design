@@ -3,25 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard - Main Landing Page</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
+    <title>Planning & Zoning Department Portal</title>
+    <link rel="stylesheet" href="planning-zoning.css" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="version-control.css" />
     <link rel="stylesheet" href="sidebar.css" />
   </head>
   <body>
     <header class="header">
       <div class="header-left">
         <div class="brand-title">Lago Vista<br />Development Services</div>
-        <h1 class="page-title">
-          Enhanced Document Review with Version Tracking
-        </h1>
+        <h1 class="page-title">Planning & Zoning Department Portal</h1>
       </div>
       <div class="header-right">
         <div class="user-info">
@@ -33,6 +27,7 @@
         </div>
       </div>
     </header>
+
     <div class="sidebar">
       <nav class="sidebar-menu">
         <a href="#" class="menu-item">
@@ -48,6 +43,7 @@
               fill="white"
             />
           </svg>
+
           <span>Dashboard</span>
         </a>
         <a href="#" class="menu-item">
@@ -63,6 +59,7 @@
               fill="white"
             />
           </svg>
+
           <span>Document Extraction</span>
         </a>
         <a href="#" class="menu-item">
@@ -78,6 +75,7 @@
               fill="white"
             />
           </svg>
+
           <span>File Validation</span>
         </a>
         <a href="#" class="menu-item">
@@ -93,6 +91,7 @@
               fill="white"
             />
           </svg>
+
           <span>Document Review</span>
         </a>
         <a href="#" class="menu-item">
@@ -108,6 +107,7 @@
               fill="white"
             />
           </svg>
+
           <span>Version Control</span>
         </a>
         <a href="#" class="menu-item">
@@ -123,6 +123,7 @@
               fill="white"
             />
           </svg>
+
           <span>Issue Resolution</span>
         </a>
         <a href="#" class="menu-item">
@@ -138,6 +139,7 @@
               fill="white"
             />
           </svg>
+
           <span>Completeness Report</span>
         </a>
         <a href="#" class="menu-item">
@@ -153,6 +155,7 @@
               fill="white"
             />
           </svg>
+
           <span>Project Creation</span>
         </a>
         <a href="#" class="menu-item">
@@ -168,6 +171,7 @@
               fill="white"
             />
           </svg>
+
           <span>Department Routing</span>
         </a>
         <a href="#" class="menu-item">
@@ -183,6 +187,7 @@
               fill="white"
             />
           </svg>
+
           <span>Status Tracking</span>
         </a>
         <a href="#" class="menu-item">
@@ -198,6 +203,7 @@
               fill="white"
             />
           </svg>
+
           <span>Planning & Zoning</span>
         </a>
         <a href="#" class="menu-item">
@@ -213,6 +219,7 @@
               fill="white"
             />
           </svg>
+
           <span>Code Enforcement</span>
         </a>
         <a href="#" class="menu-item">
@@ -228,272 +235,194 @@
               fill="white"
             />
           </svg>
+
           <span>GIS Integration</span>
         </a>
       </nav>
     </div>
+
+    <!-- Main Content -->
     <main class="main-content">
-      <div class="dashboard-header">
-        <div>
-          <div class="dashboard-title">
-            Version Control Dashboard - Permit #2024-156
-          </div>
-        </div>
-        <div class="dashboard-subtitle">
-          All document versions and change tracking
+      <!-- Planning & Zone Header -->
+      <div class="content-header">
+        <h2>Planning & Zone</h2>
+        <div class="header-stats">
+          <span>Active Construction Projects: 28</span>
+          <span class="separator">|</span>
+          <span>Inspections Today: 12</span>
         </div>
       </div>
 
-      <div class="content-grid">
-        <div class="version-history">
-          <h2 class="section-title">Version History - Site Development Plan</h2>
-
-          <div class="version-item green">
-            <div class="version-header">
-              <div class="version-name">v1.2 - Current</div>
-              <div class="version-badges">
-                <span class="badge badge-current">Current</span>
-                <span class="badge badge-download">Download</span>
-              </div>
-            </div>
-            <div class="version-details">
-              Uploaded: Aug 1, 2024 2:30 PM<br />
-              By: ABC Development LLC<br />
-              Size: 2.8 MB
-            </div>
+      <!-- Status Cards -->
+      <div class="status-cards">
+        <div class="status-card critical">
+          <div class="card-number">1</div>
+          <div class="card-content">
+            <h3>Critical Issues</h3>
+            <p>Requires immediate attention</p>
           </div>
-
-          <div class="version-item">
-            <div class="version-header">
-              <div class="version-name">v1.1</div>
-              <div class="version-badges">
-                <span class="badge badge-view">View</span>
-                <span class="badge badge-download">Download</span>
-              </div>
-            </div>
-            <div class="version-details">
-              Uploaded: July 30, 2024 4:15 PM<br />
-              By: ABC Development LLC<br />
-              Size: 2.5 MB
-            </div>
-            <div class="version-status status-reviewed">
-              Status: Reviewed with comments
-            </div>
+        </div>
+        <div class="status-card standard">
+          <div class="card-number">2</div>
+          <div class="card-content">
+            <h3>Standard Issues</h3>
+            <p>Normal priority items</p>
           </div>
+        </div>
+        <div class="status-card auto-resolved">
+          <div class="card-number">4</div>
+          <div class="card-content">
+            <h3>Auto-Resolved</h3>
+            <p>System Auto-fixed Issues</p>
+          </div>
+        </div>
+        <div class="status-card pending">
+          <div class="card-number">1</div>
+          <div class="card-content">
+            <h3>Pending Response</h3>
+            <p>Waiting for Applicant</p>
+          </div>
+        </div>
+      </div>
 
-          <div class="version-item">
-            <div class="version-header">
-              <div class="version-name">v1.0 - Original</div>
-              <div class="version-badges">
-                <span class="badge badge-view">View</span>
-                <span class="badge badge-archive">Archive</span>
+      <!-- Dashboard Content -->
+      <div class="dashboard-content">
+        <!-- Permit Application Types -->
+        <div class="card permit-types">
+          <h3>Permit Application Types</h3>
+          <div class="permit-list">
+            <div class="permit-item">
+              <div class="permit-icon blue">
+                <i class="fas fa-file-alt"></i>
               </div>
+              <div class="permit-details">
+                <h4>Variance Application (PDD)</h4>
+                <p>Planned Development District requests</p>
+                <small>Processing time: 45-60 days</small>
+              </div>
+              <button class="new-application-btn">New Application</button>
             </div>
-            <div class="version-details">
-              Uploaded: July 28, 2024 9:00 AM<br />
-              By: ABC Development LLC<br />
-              Size: 2.2 MB
+
+            <div class="permit-item">
+              <div class="permit-icon green"><i class="fas fa-map"></i></div>
+              <div class="permit-details">
+                <h4>Land Use Application</h4>
+                <p>Zoning and land use changes</p>
+                <small>Processing time: 30-45 days</small>
+              </div>
+              <button class="new-application-btn">New Application</button>
             </div>
-            <div class="version-status status-rejected">Status: Rejected</div>
+
+            <div class="permit-item">
+              <div class="permit-icon orange"><i class="fas fa-road"></i></div>
+              <div class="permit-details">
+                <h4>Right of Way Permit</h4>
+                <p>ROW access and modifications</p>
+                <small>Processing time: 15-20 days</small>
+              </div>
+              <button class="new-application-btn">New Application</button>
+            </div>
+
+            <div class="permit-item">
+              <div class="permit-icon purple"><i class="fas fa-th"></i></div>
+              <div class="permit-details">
+                <h4>Subdivision/Platting Permit</h4>
+                <p>Land division and platting</p>
+                <small>Processing time: 60-90 days</small>
+              </div>
+              <button class="new-application-btn">New Application</button>
+            </div>
+
+            <div class="permit-item">
+              <div class="permit-icon green"><i class="fas fa-tree"></i></div>
+              <div class="permit-details">
+                <h4>Tree Mitigation Permit</h4>
+                <p>Tree removal and mitigation plans</p>
+                <small>Processing time: 10-15 days</small>
+              </div>
+              <button class="new-application-btn">New Application</button>
+            </div>
+
+            <div class="permit-item">
+              <div class="permit-icon blue">
+                <i class="fas fa-building"></i>
+              </div>
+              <div class="permit-details">
+                <h4>Zoning Permit</h4>
+                <p>Standard zoning compliance</p>
+                <small>Processing time: 20-30 days</small>
+              </div>
+              <button class="new-application-btn">New Application</button>
+            </div>
           </div>
         </div>
 
-        <div class="right-panel">
-          <div class="panel-section">
-            <h3 class="section-title">Change Log & Notifications</h3>
+        <!-- Current Applications Dashboard -->
+        <div class="card current-applications">
+          <h3>Current Applications Dashboard</h3>
 
-            <h4
-              style="
-                font-size: 16px;
-                font-weight: 600;
-                color: #2d3748;
-                margin-bottom: 10px;
-              "
-            >
-              Version 1.2 Changes (Current)
-            </h4>
+          <div class="priority-reviews">
+            <h4>Priority Reviews</h4>
+            <div class="review-item">
+              <div class="review-details">
+                <h5>PDD-2024-003 - Residential Mixed Use</h5>
+                <p>Variance: Setback reduction request</p>
+                <small>Public hearing: Aug 15, 2025</small>
+              </div>
+              <span class="status-badge under-review">Under Review</span>
+            </div>
 
-            <div class="system-detected">
-              <h5
-                style="
-                  font-size: 15px;
-                  font-weight: 600;
-                  color: #2c3e50;
-                  margin-bottom: 8px;
-                "
+            <div class="review-item">
+              <div class="review-details">
+                <h5>SUB-2024-012 - Lake Vista Phase 4</h5>
+                <p>45-lot subdivision</p>
+                <small>Engineering review complete</small>
+              </div>
+              <span class="status-badge ready-approval"
+                >Ready for Approval</span
               >
-                System-Detected Changes:
-              </h5>
-              <ul class="changes-list">
-                <li>Sheet 2: Building height updated (28' → 26')</li>
-                <li>Sheet 3: New drainage details added</li>
-                <li>Sheet 4: Parking spaces increased (45 → 48)</li>
-                <li>Title block: Revision date updated</li>
+            </div>
+
+            <div class="review-item">
+              <div class="review-details">
+                <h5>ROW-2024-089 - Highway 71 Access</h5>
+                <p>Commercial driveway permit</p>
+                <small>TxDOT coordination required</small>
+              </div>
+              <span class="status-badge external-review">External Review</span>
+            </div>
+          </div>
+
+          <div class="quick-actions">
+            <h4>Quick Actions</h4>
+            <div class="action-buttons">
+              <button class="action-btn primary">
+                <i class="fas fa-calendar"></i>Schedule Hearing
+              </button>
+              <button class="action-btn primary">
+                <i class="fas fa-file-pdf"></i>Generate Report
+              </button>
+              <button class="action-btn primary">
+                <i class="fas fa-map-marker-alt"></i>View GIS Map
+              </button>
+              <button class="action-btn primary">
+                <i class="fas fa-bell"></i>Send Notifications
+              </button>
+            </div>
+          </div>
+
+          <div class="upcoming-hearings">
+            <h4>Upcoming Public Hearings</h4>
+            <div class="hearing-date">
+              <strong>Aug 15, 2025 - 7:00 PM</strong>
+              <ul>
+                <li>• PDD-2024-003 - Mixed Use Development</li>
+                <li>• VAR-2024-007 - Residential Setback Variance</li>
               </ul>
-            </div>
-            <div class="applicant">
-              <h5
-                style="
-                  font-size: 15px;
-                  font-weight: 600;
-                  color: #2c3e50;
-
-                  margin-bottom: 8px;
-                "
-              >
-                Applicant Notes:
-              </h5>
-              <div class="applicant-notes">
-                "Revised per Planning Department comments dated 7/30/24.
-                Addressed all items in review letter PD-2024-156-001".
-              </div>
-            </div>
-            <div class="validation">
-              <h5
-                style="font-size: 15px; font-weight: 600; color: #2c3e50"
-                class="alert-item"
-              >
-                Validation Alerts:
-              </h5>
-              <div class="validation-alerts">
-                <ul class="changes-list">
-                  <li>New version requires re-validation</li>
-                  <li>Engineering review may be needed for drainage changes</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="panel-section">
-            <h4
-              style="
-                font-size: 17px;
-                font-weight: 600;
-                color: #2d3748;
-                margin-bottom: 15px;
-              "
-            >
-              Automatic Notifications Sent To:
-            </h4>
-
-            <div class="notification-item">
-              <span class="notification-text"
-                ><svg
-                  style="margin-right: 5px"
-                  width="12"
-                  height="12"
-                  viewBox="0 0 14 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0.996328 0H12.9888C13.1754 0 13.3331 0.0644445 13.4619 0.193333C13.5907 0.322222 13.6551 0.48 13.6551 0.666666V11.3333C13.6551 11.52 13.5907 11.6778 13.4619 11.8067C13.3331 11.9356 13.1754 12 12.9888 12H0.996328C0.809778 12 0.652099 11.9356 0.523291 11.8067C0.394482 11.6778 0.330078 11.52 0.330078 11.3333V0.666666C0.330078 0.48 0.394482 0.322222 0.523291 0.193333C0.652099 0.0644445 0.809778 0 0.996328 0ZM12.3226 2.82667L7.04588 7.56L1.66258 2.81333V10.6667H12.3226V2.82667ZM2.00903 1.33333L7.03255 5.77333L11.9895 1.33333H2.00903Z"
-                    fill="#6B7280"
-                  />
-                </svg>
-                All reviewing departments</span
-              >
-              <span class="notification-status">Sent</span>
-            </div>
-            <div class="notification-item">
-              <span class="notification-text"
-                ><svg
-                  style="margin-right: 5px"
-                  width="12"
-                  height="12"
-                  viewBox="0 0 14 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0.996328 0H12.9888C13.1754 0 13.3331 0.0644445 13.4619 0.193333C13.5907 0.322222 13.6551 0.48 13.6551 0.666666V11.3333C13.6551 11.52 13.5907 11.6778 13.4619 11.8067C13.3331 11.9356 13.1754 12 12.9888 12H0.996328C0.809778 12 0.652099 11.9356 0.523291 11.8067C0.394482 11.6778 0.330078 11.52 0.330078 11.3333V0.666666C0.330078 0.48 0.394482 0.322222 0.523291 0.193333C0.652099 0.0644445 0.809778 0 0.996328 0ZM12.3226 2.82667L7.04588 7.56L1.66258 2.81333V10.6667H12.3226V2.82667ZM2.00903 1.33333L7.03255 5.77333L11.9895 1.33333H2.00903Z"
-                    fill="#6B7280"
-                  />
-                </svg>
-                Project manager</span
-              >
-              <span class="notification-status">Sent</span>
-            </div>
-            <div class="notification-item">
-              <span class="notification-text"
-                ><svg
-                  style="margin-right: 5px"
-                  width="12"
-                  height="12"
-                  viewBox="0 0 14 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0.996328 0H12.9888C13.1754 0 13.3331 0.0644445 13.4619 0.193333C13.5907 0.322222 13.6551 0.48 13.6551 0.666666V11.3333C13.6551 11.52 13.5907 11.6778 13.4619 11.8067C13.3331 11.9356 13.1754 12 12.9888 12H0.996328C0.809778 12 0.652099 11.9356 0.523291 11.8067C0.394482 11.6778 0.330078 11.52 0.330078 11.3333V0.666666C0.330078 0.48 0.394482 0.322222 0.523291 0.193333C0.652099 0.0644445 0.809778 0 0.996328 0ZM12.3226 2.82667L7.04588 7.56L1.66258 2.81333V10.6667H12.3226V2.82667ZM2.00903 1.33333L7.03255 5.77333L11.9895 1.33333H2.00903Z"
-                    fill="#6B7280"
-                  />
-                </svg>
-                Applicant confirmation</span
-              >
-              <span class="notification-status">Sent</span>
+              <button class="manage-agenda-btn">Manage Agenda</button>
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="settings-section">
-        <h2 class="section-title">Version Control Settings</h2>
-
-        <div class="settings-grid">
-          <div class="settings-group">
-            <h4>Auto-Notification Rules</h4>
-            <div class="checkbox-item">
-              <input type="checkbox" id="notify-new" checked />
-              <label for="notify-new"
-                >Notify all reviewers on new version</label
-              >
-            </div>
-            <div class="checkbox-item">
-              <input type="checkbox" id="auto-flag" checked />
-              <label for="auto-flag"
-                >Auto-flag major changes for re-review</label
-              >
-            </div>
-            <div class="checkbox-item">
-              <input type="checkbox" id="lock-previous" />
-              <label for="lock-previous"
-                >Lock previous versions after approval</label
-              >
-            </div>
-            <div class="checkbox-item">
-              <input type="checkbox" id="require-summary" checked />
-              <label for="require-summary"
-                >Require change summary for uploads</label
-              >
-            </div>
-          </div>
-
-          <div class="settings-group">
-            <h4 style="color: #2c3e50">Retention Policy</h4>
-            <select class="dropdown-select">
-              <option value="permanent">Keep all versions permanently</option>
-              <option value="30days">Keep for 30 days</option>
-              <option value="90days">Keep for 90 days</option>
-              <option value="1year">Keep for 1 year</option>
-            </select>
-
-            <h4 style="margin-top: 20px; color: #2c3e50">
-              Version Naming Convention
-            </h4>
-            <select class="dropdown-select">
-              <option value="automatic">Automatic (v1.0, v1.1, etc.)</option>
-              <option value="manual">Manual naming</option>
-              <option value="date">Date-based (YYYY-MM-DD)</option>
-            </select>
-          </div>
-        </div>
-      </div>
-
-      <div class="action-buttons">
-        <button class="btn btn-primary">Export Version Report</button>
-        <button class="btn btn-success">Approve Current Version</button>
-        <button class="btn btn-warning">Request New Version</button>
       </div>
     </main>
   </body>
