@@ -18,7 +18,7 @@
     <header class="header">
         <div class="header-left">
             <div class="brand-title">Lago Vista<br />Development Services</div>
-            <h1 class="page-title">Dashboard - Main Landing Page</h1>
+            <h1 class="page-title">GIS Integration & Mapping System</h1>
         </div>
         <div class="header-right">
             <div class="user-info">
@@ -162,7 +162,7 @@
         </div>
         <div class="metric-cards">
             <div class="metric-card blue">
-                <div class="metric-number blue">12456</div>
+                <div class="metric-number blue">12,456</div>
                 <div class="metric-title">Total Parcels</div>
                 <div class="metric-subtitle">Properties in city limits</div>
             </div>
@@ -171,24 +171,26 @@
                 <div class="metric-title">Active Construction</div>
                 <div class="metric-subtitle">Projects visible on map</div>
             </div>
-            <div class="metric-card gray">
-                <div class="metric-number gray">15</div>
+            <div class="metric-card green">
+                <div class="metric-number green">15</div>
                 <div class="metric-title">Zoning Districts</div>
                 <div class="metric-subtitle">Diffrent zone classifications</div>
             </div>
-            <div class="metric-card green">
-                <div class="metric-number green">99.8%</div>
+            <div class="metric-card purple">
+                <div class="metric-number purple">99.8%</div>
                 <div class="metric-title">Map Accuracy</div>
                 <div class="metric-subtitle">Parcel boundary precision</div>
             </div>
         </div>
         <!-- Interactive Map Section -->
        <!-- Main Content: Interactive Map and Property Info -->
+
+
 <div class="map-interface-container">
   <!-- Left Panel - Map Controls -->
   <div class="left-panel">
     <div class="controls-section">
-      <h3 class="section-title">Interactive Map Controls</h3>
+      <div class="section-title">Interactive Map Controls</div>
       
       <div class="map-layers">
         <h4 class="subsection-title">Map Layers</h4>
@@ -226,40 +228,58 @@
       
       <div class="action-buttons">
         <button class="btn btn-search">
-          <span class="btn-icon">🔍</span>
+         
           Search
         </button>
         <button class="btn btn-measure">
-          <span class="btn-icon">📏</span>
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.70011 8.23667L2.05569 9.88167L4.11996 11.9467L11.9455 4.11834L9.88123 2.05334L8.64501 3.29L9.47304 4.11834L8.64501 4.935L7.82863 4.11834L6.59241 5.355L7.82863 6.59167L7.00059 7.40834L5.76437 6.17167L4.52814 7.40834L5.35618 8.23667L4.52814 9.065L3.70011 8.23667ZM10.3011 0.81667L13.1817 3.69834C13.2983 3.815 13.3567 3.95306 13.3567 4.1125C13.3567 4.27195 13.2983 4.41 13.1817 4.52667L4.52814 13.1833C4.41152 13.3 4.27351 13.3583 4.11413 13.3583C3.95474 13.3583 3.81673 13.3 3.70011 13.1833L0.819469 10.3017C0.702844 10.185 0.644531 10.0469 0.644531 9.8875C0.644531 9.72806 0.702844 9.59 0.819469 9.47334L9.47304 0.81667C9.58967 0.700004 9.72768 0.64167 9.88706 0.64167C10.0464 0.64167 10.1845 0.700004 10.3011 0.81667Z" fill="white"/>
+</svg>
+
           Measure
         </button>
         <button class="btn btn-drop-pin">
-          <span class="btn-icon">📍</span>
+          <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.00008 11.69L8.88072 8.79669C9.40942 8.27558 9.76707 7.66113 9.95367 6.95336C10.1325 6.26113 10.1325 5.56891 9.95367 4.87669C9.76707 4.16891 9.41136 3.55252 8.88655 3.02752C8.36173 2.50252 7.74557 2.14669 7.03804 1.96002C6.34607 1.78113 5.65409 1.78113 4.96212 1.96002C4.25459 2.14669 3.63842 2.50252 3.11361 3.02752C2.5888 3.55252 2.23309 4.16891 2.04649 4.87669C1.86767 5.56891 1.86767 6.26113 2.04649 6.95336C2.23309 7.66113 2.59074 8.27558 3.11944 8.79669L6.00008 11.69ZM6.00008 13.335L2.2914 9.62502C1.61498 8.95613 1.16014 8.1628 0.926891 7.24502C0.693641 6.35836 0.693641 5.47169 0.926891 4.58502C1.16014 3.66724 1.61303 2.87197 2.28557 2.19919C2.95811 1.52641 3.7531 1.06947 4.67055 0.828355C5.5569 0.602799 6.44325 0.602799 7.3296 0.828355C8.24705 1.06947 9.04205 1.52641 9.71458 2.19919C10.3871 2.87197 10.84 3.66724 11.0733 4.58502C11.3065 5.47169 11.3065 6.35836 11.0733 7.24502C10.84 8.1628 10.3852 8.95613 9.70875 9.62502L6.00008 13.335ZM6.00008 7.08169C6.21 7.08169 6.40438 7.02919 6.5832 6.92419C6.76203 6.81919 6.90392 6.67724 7.00888 6.49836C7.11385 6.31947 7.16633 6.12502 7.16633 5.91502C7.16633 5.70502 7.11385 5.51058 7.00888 5.33169C6.90392 5.1528 6.76203 5.01086 6.5832 4.90586C6.40438 4.80086 6.21 4.74835 6.00008 4.74835C5.79015 4.74835 5.59578 4.80086 5.41695 4.90586C5.23813 5.01086 5.09623 5.1528 4.99127 5.33169C4.88631 5.51058 4.83383 5.70502 4.83383 5.91502C4.83383 6.12502 4.88631 6.31947 4.99127 6.49836C5.09623 6.67724 5.23813 6.81919 5.41695 6.92419C5.59578 7.02919 5.79015 7.08169 6.00008 7.08169ZM6.00008 8.24836C5.58023 8.24836 5.19148 8.14336 4.83383 7.93336C4.47618 7.72336 4.19239 7.43947 3.98247 7.08169C3.77254 6.72391 3.66758 6.33308 3.66758 5.90919C3.66758 5.4853 3.77254 5.09641 3.98247 4.74252C4.19239 4.38863 4.47618 4.10669 4.83383 3.89669C5.19148 3.68669 5.58023 3.58169 6.00008 3.58169C6.41993 3.58169 6.80868 3.68669 7.16633 3.89669C7.52398 4.10669 7.80777 4.38863 8.01769 4.74252C8.22762 5.09641 8.33258 5.4853 8.33258 5.90919C8.33258 6.33308 8.22762 6.72391 8.01769 7.08169C7.80777 7.43947 7.52398 7.72336 7.16633 7.93336C6.80868 8.14336 6.41993 8.24836 6.00008 8.24836Z" fill="white"/>
+</svg>
+
           Drop Pin
         </button>
         <button class="btn btn-print">
-          <span class="btn-icon">🖨️</span>
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.91484 0.166646C9.07812 0.166646 9.21612 0.223035 9.32886 0.335813C9.4416 0.44859 9.49797 0.586646 9.49797 0.74998V3.08331H11.2473C11.4106 3.08331 11.5486 3.1397 11.6614 3.25248C11.7741 3.36526 11.8305 3.50331 11.8305 3.66665V9.49998C11.8305 9.66331 11.7741 9.80137 11.6614 9.91415C11.5486 10.0269 11.4106 10.0833 11.2473 10.0833H9.49797V11.25C9.49797 11.4133 9.4416 11.5514 9.32886 11.6641C9.21612 11.7769 9.07812 11.8333 8.91484 11.8333H3.08359C2.92032 11.8333 2.78231 11.7769 2.66957 11.6641C2.55684 11.5514 2.50047 11.4133 2.50047 11.25V10.0833H0.751094C0.587819 10.0833 0.449813 10.0269 0.337075 9.91415C0.224337 9.80137 0.167969 9.66331 0.167969 9.49998V3.66665C0.167969 3.50331 0.224337 3.36526 0.337075 3.25248C0.449813 3.1397 0.587819 3.08331 0.751094 3.08331H2.50047V0.74998C2.50047 0.586646 2.55684 0.44859 2.66957 0.335813C2.78231 0.223035 2.92032 0.166646 3.08359 0.166646H8.91484ZM8.33172 8.91665H3.66672V10.6666H8.33172V8.91665ZM10.6642 4.24998H1.33422V8.91665H2.50047V8.33331C2.50047 8.16998 2.55684 8.03192 2.66957 7.91915C2.78231 7.80637 2.92032 7.74998 3.08359 7.74998H8.91484C9.07812 7.74998 9.21612 7.80637 9.32886 7.91915C9.4416 8.03192 9.49797 8.16998 9.49797 8.33331V8.91665H10.6642V4.24998ZM3.66672 4.83331V5.99998H1.91734V4.83331H3.66672ZM8.33172 1.33331H3.66672V3.08331H8.33172V1.33331Z" fill="white"/>
+</svg>
+
           Print Map
         </button>
       </div>
        <!-- Map Container -->
     <div class="map-container">
       <div class="map-header">
-        <span class="map-title">Interactive GIS Map</span>
-        <span class="map-location">Lago Vista, TX - Development Services</span>
+        <button class="map-title">Interactive GIS Map</button>
+        <button class="map-location">Lago Vista, TX - Development Services</button>
       </div>
      <div class="map-area">
   <img src="images/image.jpg" alt="Interactive GIS Map" class="map-image">
   
   <div class="map-legend">
-    <div class="legend-item legend-active">Active Permits</div>
-    <div class="legend-item legend-violations">Violations</div>
-    <div class="legend-item legend-completed">Completed</div>
+    <button class="legend-item legend-active"><svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.5625 4C0.5625 1.79086 2.35336 0 4.5625 0C6.77164 0 8.5625 1.79086 8.5625 4C8.5625 6.20914 6.77164 8 4.5625 8C2.35336 8 0.5625 6.20914 0.5625 4Z" fill="white"/>
+</svg>
+Active Permits</button>
+    <button class="legend-item legend-violations"><svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.5625 4C0.5625 1.79086 2.35336 0 4.5625 0C6.77164 0 8.5625 1.79086 8.5625 4C8.5625 6.20914 6.77164 8 4.5625 8C2.35336 8 0.5625 6.20914 0.5625 4Z" fill="white"/>
+</svg>
+Violations</button>
+    <button class="legend-item legend-completed"><svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.5625 4C0.5625 1.79086 2.35336 0 4.5625 0C6.77164 0 8.5625 1.79086 8.5625 4C8.5625 6.20914 6.77164 8 4.5625 8C2.35336 8 0.5625 6.20914 0.5625 4Z" fill="white"/>
+</svg>
+Completed</button>
   </div>
   
   <div class="map-info">
-    <div>Scale: 1" = 200'</div>
-    <div>Last Updated: Aug 7, 2025</div>
+    <span>Scale: 1" = 200'</span><br>
+    <span>Last Updated: Aug 7, 2025</span>
   </div>
 </div>
 
@@ -356,13 +376,6 @@
  
 </div>
 
-<!-- Bottom Action Bar -->
-<div class="bottom-action-bar">
-  <button class="btn btn-success">Generate Parcel Report</button>
-  <button class="btn btn-primary">Export Map Data</button>
-  <button class="btn btn-primary">Schedule Field Survey</button>
-  <button class="btn btn-warning">Update Parcel Information</button>
-</div>
 
 
     </div>
