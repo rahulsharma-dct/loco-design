@@ -102,6 +102,10 @@ body {
   position: relative;
   gap: 10px;
 }
+.menu-item svg {
+  min-height: 16px;
+  min-width: 16px;
+}
 .menu-item:hover {
   background-color: rgba(255, 255, 255, 0.08);
   padding-left: 28px;
